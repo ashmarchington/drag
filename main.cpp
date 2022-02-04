@@ -3,18 +3,18 @@
 
 int main(int argc, char* argv[], char *envp[]) {
 
-    drag::Drag drag = drag::Drag();
+    drag::drag drag = drag::drag();
 
-    if (argc > 1) {
+    if (argc > 2) {
         std::cout << "Usage: drag [script]" << std::endl;
-        return 1;
-    } else if (argc == 1) {
+        return static_cast<int>(drag::STATE::failure);
+    } else if (argc == 2) {
         drag.main(std::filesystem::path(argv[1]));
     } else {
         drag.main();
     }
 
-    if(drag.hasError()) {
+    if(drag.has_error()) {
         return static_cast<int>(drag::STATE::failure);
     }
 

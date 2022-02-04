@@ -9,9 +9,9 @@
 #include <vector>
 
 namespace drag::file {
-    class Utility {
+    class utility {
     public:
-        static std::vector<char> readBytes(std::filesystem::path path);
+        static std::vector<char> read_bytes(const std::filesystem::path& path);
     };
 }
 

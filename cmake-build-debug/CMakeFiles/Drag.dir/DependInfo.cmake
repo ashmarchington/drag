@@ -11,6 +11,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/main.cpp" "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/CMakeFiles/Drag.dir/main.cpp.o"
   "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/drag.cpp" "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/CMakeFiles/Drag.dir/src/drag/drag.cpp.o"
   "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/file/utility.cpp" "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/CMakeFiles/Drag.dir/src/drag/file/utility.cpp.o"
+  "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/scanner/scanner.cpp" "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.o"
+  "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token.cpp" "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

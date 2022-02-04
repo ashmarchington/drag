@@ -95,6 +95,18 @@
 		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/file/utility.h">
 			<Option target="Drag"/>
 		</Unit>
+		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/scanner/scanner.cpp">
+			<Option target="Drag"/>
+		</Unit>
+		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/scanner/scanner.h">
+			<Option target="Drag"/>
+		</Unit>
+		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token.cpp">
+			<Option target="Drag"/>
+		</Unit>
+		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token.h">
+			<Option target="Drag"/>
+		</Unit>
 		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

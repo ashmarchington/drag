@@ -105,11 +105,39 @@ CMakeFiles/Drag.dir/src/drag/file/utility.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Drag.dir/src/drag/file/utility.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/file/utility.cpp -o CMakeFiles/Drag.dir/src/drag/file/utility.cpp.s
 
+CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.o: CMakeFiles/Drag.dir/flags.make
+CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.o: ../src/drag/lexer/scanner/scanner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/scanner/scanner.cpp
+
+CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/scanner/scanner.cpp > CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.i
+
+CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/scanner/scanner.cpp -o CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.s
+
+CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.o: CMakeFiles/Drag.dir/flags.make
+CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.o: ../src/drag/lexer/token.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token.cpp
+
+CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token.cpp > CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.i
+
+CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token.cpp -o CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.s
+
 # Object files for target Drag
 Drag_OBJECTS = \
 "CMakeFiles/Drag.dir/main.cpp.o" \
 "CMakeFiles/Drag.dir/src/drag/drag.cpp.o" \
-"CMakeFiles/Drag.dir/src/drag/file/utility.cpp.o"
+"CMakeFiles/Drag.dir/src/drag/file/utility.cpp.o" \
+"CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.o" \
+"CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.o"
 
 # External object files for target Drag
 Drag_EXTERNAL_OBJECTS =
@@ -117,9 +145,11 @@ Drag_EXTERNAL_OBJECTS =
 Drag: CMakeFiles/Drag.dir/main.cpp.o
 Drag: CMakeFiles/Drag.dir/src/drag/drag.cpp.o
 Drag: CMakeFiles/Drag.dir/src/drag/file/utility.cpp.o
+Drag: CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.o
+Drag: CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.o
 Drag: CMakeFiles/Drag.dir/build.make
 Drag: CMakeFiles/Drag.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Drag"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Drag"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Drag.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

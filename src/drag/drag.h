@@ -5,9 +5,8 @@
 #ifndef DRAG_DRAG_H
 #define DRAG_DRAG_H
 
-#include <string>
-#include <optional>
 #include <filesystem>
+#include <vector>
 
 namespace drag {
     enum class STATE : int {
@@ -15,17 +14,18 @@ namespace drag {
         failure = 64
     };
 
-    class Drag {
+    class drag {
     public:
         void main(const std::filesystem::path& path);
         void main();
-        bool hasError() const;
+        bool has_error() const;
 
     private:
         mutable bool error = false;
-        void setError(bool hasError);
-        void runFile(const std::filesystem::path& path);
-        void runPrompt();
+        void set_error();
+        void run_file(const std::filesystem::path& path);
+        void run_prompt();
+        void run(const std::vector<char>& data);
     };
 }
 

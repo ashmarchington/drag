@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Drag.dir/main.cpp.o"
   "CMakeFiles/Drag.dir/src/drag/drag.cpp.o"
   "CMakeFiles/Drag.dir/src/drag/file/utility.cpp.o"
+  "CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.o"
+  "CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.o"
   "Drag"
   "Drag.pdb"
 )

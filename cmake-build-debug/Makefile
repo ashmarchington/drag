@@ -201,6 +201,54 @@ src/drag/file/utility.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/file/utility.cpp.s
 .PHONY : src/drag/file/utility.cpp.s
 
+src/drag/lexer/scanner/scanner.o: src/drag/lexer/scanner/scanner.cpp.o
+.PHONY : src/drag/lexer/scanner/scanner.o
+
+# target to build an object file
+src/drag/lexer/scanner/scanner.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.o
+.PHONY : src/drag/lexer/scanner/scanner.cpp.o
+
+src/drag/lexer/scanner/scanner.i: src/drag/lexer/scanner/scanner.cpp.i
+.PHONY : src/drag/lexer/scanner/scanner.i
+
+# target to preprocess a source file
+src/drag/lexer/scanner/scanner.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.i
+.PHONY : src/drag/lexer/scanner/scanner.cpp.i
+
+src/drag/lexer/scanner/scanner.s: src/drag/lexer/scanner/scanner.cpp.s
+.PHONY : src/drag/lexer/scanner/scanner.s
+
+# target to generate assembly for a file
+src/drag/lexer/scanner/scanner.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.s
+.PHONY : src/drag/lexer/scanner/scanner.cpp.s
+
+src/drag/lexer/token.o: src/drag/lexer/token.cpp.o
+.PHONY : src/drag/lexer/token.o
+
+# target to build an object file
+src/drag/lexer/token.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.o
+.PHONY : src/drag/lexer/token.cpp.o
+
+src/drag/lexer/token.i: src/drag/lexer/token.cpp.i
+.PHONY : src/drag/lexer/token.i
+
+# target to preprocess a source file
+src/drag/lexer/token.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.i
+.PHONY : src/drag/lexer/token.cpp.i
+
+src/drag/lexer/token.s: src/drag/lexer/token.cpp.s
+.PHONY : src/drag/lexer/token.s
+
+# target to generate assembly for a file
+src/drag/lexer/token.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.s
+.PHONY : src/drag/lexer/token.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,6 +267,12 @@ help:
 	@echo "... src/drag/file/utility.o"
 	@echo "... src/drag/file/utility.i"
 	@echo "... src/drag/file/utility.s"
+	@echo "... src/drag/lexer/scanner/scanner.o"
+	@echo "... src/drag/lexer/scanner/scanner.i"
+	@echo "... src/drag/lexer/scanner/scanner.s"
+	@echo "... src/drag/lexer/token.o"
+	@echo "... src/drag/lexer/token.i"
+	@echo "... src/drag/lexer/token.s"
 .PHONY : help
 
 

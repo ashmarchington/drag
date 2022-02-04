@@ -6,7 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/main.cpp
-iostream
+/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/drag.cpp
+vector
+-
+drag.h
+/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/drag.h
+file/utility.h
+/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/file/utility.h
+
+/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/drag.h
+string
+-
+optional
+-
+filesystem
+-
+
+/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/file/utility.h
+filesystem
+-
+vector
 -
 
