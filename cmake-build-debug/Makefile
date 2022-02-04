@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /home/ash/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /home/ash/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag
+CMAKE_SOURCE_DIR = /home/ash/Documents/GitHub/personal/drag
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ash/Documents/GitHub/personal/drag/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmak
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/ash/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,7 +78,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/ash/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/CMakeFiles /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ash/Documents/GitHub/personal/drag/cmake-build-debug/CMakeFiles /home/ash/Documents/GitHub/personal/drag/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ash/Documents/GitHub/personal/drag/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,30 @@ src/drag/drag.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/drag.cpp.s
 .PHONY : src/drag/drag.cpp.s
 
+src/drag/error/handler.o: src/drag/error/handler.cpp.o
+.PHONY : src/drag/error/handler.o
+
+# target to build an object file
+src/drag/error/handler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/error/handler.cpp.o
+.PHONY : src/drag/error/handler.cpp.o
+
+src/drag/error/handler.i: src/drag/error/handler.cpp.i
+.PHONY : src/drag/error/handler.i
+
+# target to preprocess a source file
+src/drag/error/handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/error/handler.cpp.i
+.PHONY : src/drag/error/handler.cpp.i
+
+src/drag/error/handler.s: src/drag/error/handler.cpp.s
+.PHONY : src/drag/error/handler.s
+
+# target to generate assembly for a file
+src/drag/error/handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/error/handler.cpp.s
+.PHONY : src/drag/error/handler.cpp.s
+
 src/drag/file/utility.o: src/drag/file/utility.cpp.o
 .PHONY : src/drag/file/utility.o
 
@@ -249,6 +273,126 @@ src/drag/lexer/token.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.s
 .PHONY : src/drag/lexer/token.cpp.s
 
+src/drag/lexer/token_literal/base_token.o: src/drag/lexer/token_literal/base_token.cpp.o
+.PHONY : src/drag/lexer/token_literal/base_token.o
+
+# target to build an object file
+src/drag/lexer/token_literal/base_token.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_literal/base_token.cpp.o
+.PHONY : src/drag/lexer/token_literal/base_token.cpp.o
+
+src/drag/lexer/token_literal/base_token.i: src/drag/lexer/token_literal/base_token.cpp.i
+.PHONY : src/drag/lexer/token_literal/base_token.i
+
+# target to preprocess a source file
+src/drag/lexer/token_literal/base_token.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_literal/base_token.cpp.i
+.PHONY : src/drag/lexer/token_literal/base_token.cpp.i
+
+src/drag/lexer/token_literal/base_token.s: src/drag/lexer/token_literal/base_token.cpp.s
+.PHONY : src/drag/lexer/token_literal/base_token.s
+
+# target to generate assembly for a file
+src/drag/lexer/token_literal/base_token.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_literal/base_token.cpp.s
+.PHONY : src/drag/lexer/token_literal/base_token.cpp.s
+
+src/drag/lexer/token_type.o: src/drag/lexer/token_type.cpp.o
+.PHONY : src/drag/lexer/token_type.o
+
+# target to build an object file
+src/drag/lexer/token_type.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_type.cpp.o
+.PHONY : src/drag/lexer/token_type.cpp.o
+
+src/drag/lexer/token_type.i: src/drag/lexer/token_type.cpp.i
+.PHONY : src/drag/lexer/token_type.i
+
+# target to preprocess a source file
+src/drag/lexer/token_type.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_type.cpp.i
+.PHONY : src/drag/lexer/token_type.cpp.i
+
+src/drag/lexer/token_type.s: src/drag/lexer/token_type.cpp.s
+.PHONY : src/drag/lexer/token_type.s
+
+# target to generate assembly for a file
+src/drag/lexer/token_type.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_type.cpp.s
+.PHONY : src/drag/lexer/token_type.cpp.s
+
+src/drag/util/iterator.o: src/drag/util/iterator.cpp.o
+.PHONY : src/drag/util/iterator.o
+
+# target to build an object file
+src/drag/util/iterator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/iterator.cpp.o
+.PHONY : src/drag/util/iterator.cpp.o
+
+src/drag/util/iterator.i: src/drag/util/iterator.cpp.i
+.PHONY : src/drag/util/iterator.i
+
+# target to preprocess a source file
+src/drag/util/iterator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/iterator.cpp.i
+.PHONY : src/drag/util/iterator.cpp.i
+
+src/drag/util/iterator.s: src/drag/util/iterator.cpp.s
+.PHONY : src/drag/util/iterator.s
+
+# target to generate assembly for a file
+src/drag/util/iterator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/iterator.cpp.s
+.PHONY : src/drag/util/iterator.cpp.s
+
+src/drag/util/string_object.o: src/drag/util/string_object.cpp.o
+.PHONY : src/drag/util/string_object.o
+
+# target to build an object file
+src/drag/util/string_object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/string_object.cpp.o
+.PHONY : src/drag/util/string_object.cpp.o
+
+src/drag/util/string_object.i: src/drag/util/string_object.cpp.i
+.PHONY : src/drag/util/string_object.i
+
+# target to preprocess a source file
+src/drag/util/string_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/string_object.cpp.i
+.PHONY : src/drag/util/string_object.cpp.i
+
+src/drag/util/string_object.s: src/drag/util/string_object.cpp.s
+.PHONY : src/drag/util/string_object.s
+
+# target to generate assembly for a file
+src/drag/util/string_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/string_object.cpp.s
+.PHONY : src/drag/util/string_object.cpp.s
+
+src/drag/util/type_mapper.o: src/drag/util/type_mapper.cpp.o
+.PHONY : src/drag/util/type_mapper.o
+
+# target to build an object file
+src/drag/util/type_mapper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/type_mapper.cpp.o
+.PHONY : src/drag/util/type_mapper.cpp.o
+
+src/drag/util/type_mapper.i: src/drag/util/type_mapper.cpp.i
+.PHONY : src/drag/util/type_mapper.i
+
+# target to preprocess a source file
+src/drag/util/type_mapper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/type_mapper.cpp.i
+.PHONY : src/drag/util/type_mapper.cpp.i
+
+src/drag/util/type_mapper.s: src/drag/util/type_mapper.cpp.s
+.PHONY : src/drag/util/type_mapper.s
+
+# target to generate assembly for a file
+src/drag/util/type_mapper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/type_mapper.cpp.s
+.PHONY : src/drag/util/type_mapper.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -264,6 +408,9 @@ help:
 	@echo "... src/drag/drag.o"
 	@echo "... src/drag/drag.i"
 	@echo "... src/drag/drag.s"
+	@echo "... src/drag/error/handler.o"
+	@echo "... src/drag/error/handler.i"
+	@echo "... src/drag/error/handler.s"
 	@echo "... src/drag/file/utility.o"
 	@echo "... src/drag/file/utility.i"
 	@echo "... src/drag/file/utility.s"
@@ -273,6 +420,21 @@ help:
 	@echo "... src/drag/lexer/token.o"
 	@echo "... src/drag/lexer/token.i"
 	@echo "... src/drag/lexer/token.s"
+	@echo "... src/drag/lexer/token_literal/base_token.o"
+	@echo "... src/drag/lexer/token_literal/base_token.i"
+	@echo "... src/drag/lexer/token_literal/base_token.s"
+	@echo "... src/drag/lexer/token_type.o"
+	@echo "... src/drag/lexer/token_type.i"
+	@echo "... src/drag/lexer/token_type.s"
+	@echo "... src/drag/util/iterator.o"
+	@echo "... src/drag/util/iterator.i"
+	@echo "... src/drag/util/iterator.s"
+	@echo "... src/drag/util/string_object.o"
+	@echo "... src/drag/util/string_object.i"
+	@echo "... src/drag/util/string_object.s"
+	@echo "... src/drag/util/type_mapper.o"
+	@echo "... src/drag/util/type_mapper.i"
+	@echo "... src/drag/util/type_mapper.s"
 .PHONY : help
 
 

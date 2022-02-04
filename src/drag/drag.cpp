@@ -27,11 +27,7 @@ void drag::drag::set_error() {
 
 void drag::drag::run_file(const std::filesystem::path& path) {
     std::vector<char> file_bytes = file::utility::read_bytes(path);
-    try {
-        run(file_bytes);
-    } catch(...) {
-        set_error();
-    }
+    run(file_bytes);
 }
 
 void drag::drag::run_prompt() {
@@ -40,11 +36,11 @@ void drag::drag::run_prompt() {
         std::string line;
         getline(std::cin, line);
         if (line.empty()) {
-            set_error();
             break;
         }
         std::vector<char> result(line.begin(), line.end());
         run(result);
+        drag::error = false;
     }
 }
 
@@ -52,6 +48,7 @@ void drag::drag::run(const std::vector<char>& data) {
     auto scanner = lexer::scanner::scanner(data);
     std::vector<lexer::token> token_list =  scanner.scanTokens();
     for(auto t : token_list) {
-        
+        std::cout << t.to_string() << std::endl;
     }
+    set_error();
 }

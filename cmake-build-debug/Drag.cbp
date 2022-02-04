@@ -8,106 +8,142 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug"/>
+				<Option working_dir="/home/ash/Documents/GitHub/personal/drag/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug"/>
+				<Option working_dir="/home/ash/Documents/GitHub/personal/drag/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug"/>
+				<Option working_dir="/home/ash/Documents/GitHub/personal/drag/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Drag">
-				<Option output="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Drag" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug"/>
+				<Option output="/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Drag" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ash/Documents/GitHub/personal/drag/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/9/../../../../include/c++/9"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/9/../../../../include/c++/9/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/9/../../../../include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 Drag"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 Drag"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Drag/fast">
-				<Option output="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Drag" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug"/>
+				<Option output="/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Drag" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ash/Documents/GitHub/personal/drag/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/9/../../../../include/c++/9"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/9/../../../../include/c++/9/x86_64-redhat-linux"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/9/../../../../include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-redhat-linux/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 Drag/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 Drag/fast"/>
+					<CompileFile command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j16 -f &quot;/home/ash/Documents/GitHub/personal/drag/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/main.cpp">
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/main.cpp">
 			<Option target="Drag"/>
 		</Unit>
-		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/drag.cpp">
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/drag.cpp">
 			<Option target="Drag"/>
 		</Unit>
-		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/drag.h">
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/drag.h">
 			<Option target="Drag"/>
 		</Unit>
-		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/file/utility.cpp">
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/error/handler.cpp">
 			<Option target="Drag"/>
 		</Unit>
-		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/file/utility.h">
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/error/handler.h">
 			<Option target="Drag"/>
 		</Unit>
-		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/scanner/scanner.cpp">
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/file/utility.cpp">
 			<Option target="Drag"/>
 		</Unit>
-		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/scanner/scanner.h">
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/file/utility.h">
 			<Option target="Drag"/>
 		</Unit>
-		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token.cpp">
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/lexer/scanner/scanner.cpp">
 			<Option target="Drag"/>
 		</Unit>
-		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token.h">
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/lexer/scanner/scanner.h">
 			<Option target="Drag"/>
 		</Unit>
-		<Unit filename="/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/CMakeLists.txt">
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/lexer/token.cpp">
+			<Option target="Drag"/>
+		</Unit>
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/lexer/token.h">
+			<Option target="Drag"/>
+		</Unit>
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/lexer/token_literal/base_token.cpp">
+			<Option target="Drag"/>
+		</Unit>
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/lexer/token_literal/base_token.h">
+			<Option target="Drag"/>
+		</Unit>
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/lexer/token_type.cpp">
+			<Option target="Drag"/>
+		</Unit>
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/lexer/token_type.h">
+			<Option target="Drag"/>
+		</Unit>
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/util/iterator.cpp">
+			<Option target="Drag"/>
+		</Unit>
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/util/iterator.h">
+			<Option target="Drag"/>
+		</Unit>
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/util/string_object.cpp">
+			<Option target="Drag"/>
+		</Unit>
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/util/string_object.h">
+			<Option target="Drag"/>
+		</Unit>
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/util/type_mapper.cpp">
+			<Option target="Drag"/>
+		</Unit>
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/util/type_mapper.h">
+			<Option target="Drag"/>
+		</Unit>
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
