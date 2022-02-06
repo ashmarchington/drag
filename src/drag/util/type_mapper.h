@@ -9,10 +9,10 @@
 #include <map>
 #include "../lexer/token_type.h"
 
-namespace drag::util {
+namespace drag {
     class type_mapper {
     public:
-        static std::map<drag::lexer::token_type, std::string> build_type_map();
+        static std::map<drag::token_type, std::string> build_type_map();
     };
 }
 

@@ -1,2 +1,2 @@
-# drag
-drag language interpreter
+# main
+main language interpreter

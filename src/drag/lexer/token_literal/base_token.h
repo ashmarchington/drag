@@ -7,9 +7,10 @@
 
 #include "../../util/string_object.h"
 
-namespace drag::lexer::token_literal {
-    class base_token : drag::util::string_object {
+namespace drag {
+    class base_token : string_object {
     public:
+        base_token() = default;
         std::string to_string() override;
     };
 }

@@ -4,8 +4,8 @@
 
 #include "type_mapper.h"
 
-using namespace drag::lexer;
+using namespace drag;
 
-std::map<drag::lexer::token_type, std::string> drag::util::type_mapper::build_type_map() {
+std::map<drag::token_type, std::string> drag::type_mapper::build_type_map() {
     return {};
 }

@@ -4,6 +4,6 @@
 
 #include "string_object.h"
 
-std::string drag::util::string_object::to_string() {
+std::string drag::string_object::to_string() {
     return {};
 }

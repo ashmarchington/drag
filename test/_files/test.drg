@@ -1,3 +1,6 @@
-class test <: base {
-
+class test :> base
+{
+    fun build() {
+        return 1 + 1;
+    }
 }

@@ -10,17 +10,20 @@
 #include "token_type.h"
 #include "token_literal/base_token.h"
 
-using namespace drag::lexer;
-namespace drag::lexer {
+namespace drag {
     class token {
-    private:
-        std::map<token_type, std::string> type_map;
     public:
-        token_type type;
+        drag::token_type::token_literals type;
         const std::string lexeme;
-        token_literal::base_token literal;
+        drag::base_token literal;
         const int line_number;
-        token(token_type type, std::string lexeme, token_literal::base_token literal, int line_number);
+
+        token();
+
+        explicit token(drag::token_type::token_literals type);
+
+        token(drag::token_type::token_literals type, std::string lexeme, drag::base_token literal, int line_number);
+
         std::string to_string();
     };
 }

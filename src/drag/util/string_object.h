@@ -7,7 +7,7 @@
 
 #include <string>
 
-namespace drag::util {
+namespace drag {
     class string_object {
         virtual std::string to_string();
     };

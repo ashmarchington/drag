@@ -7,13 +7,15 @@
 
 #include <string>
 
-namespace drag::error {
+namespace drag {
     class handler {
     public:
-        static void error(int line_number, const std::string& message);
-        static void error(int line_number, const std::string& where, const std::string& message);
+        static void error(int line_number, const std::string &message);
+
+        static void error(int line_number, const std::string &where, const std::string &message);
+
     private:
-        static void report(int line_number, const std::string& where, const std::string& message);
+        static void report(int line_number, const std::string &where, const std::string &message);
     };
 }
 
