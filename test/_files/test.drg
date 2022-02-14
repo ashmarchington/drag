@@ -1,6 +1,10 @@
-class test :> base
+class test2 :> base
 {
+    // test comment
     fun build() {
+        var string_value = "test string";
+        var num_value = 1006.89;
+        var test = (4 / 5);
         return 1 + 1;
     }
 }

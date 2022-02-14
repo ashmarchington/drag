@@ -13,5 +13,4 @@ namespace drag {
     };
 }
 
-
 #endif //DRAG_STRING_OBJECT_H

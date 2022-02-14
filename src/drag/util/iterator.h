@@ -12,7 +12,7 @@ namespace drag {
     class iterator {
         typedef typename std::underlying_type<T>::type val_t;
         int val;
-    public:
+      public:
         explicit iterator(const T &f) : val(static_cast<val_t>(f)) {}
 
         iterator() : val(static_cast<val_t>(beginVal)) {}
@@ -31,7 +31,7 @@ namespace drag {
         }
 
         iterator end() {
-            static const iterator endIter = ++iterator(endVal);
+            static const iterator endIter = iterator(endVal);
             return endIter;
         }
 
@@ -40,6 +40,5 @@ namespace drag {
         }
     };
 }
-
 
 #endif //DRAG_ITERATOR_H

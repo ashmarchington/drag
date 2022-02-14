@@ -6,7 +6,7 @@
 
 #include <utility>
 
-drag::string_token::string_token(std::string value): token_value(std::move(value)) {}
+drag::string_token::string_token(std::string value) : token_value(std::move(value)) {}
 
 std::string drag::string_token::to_string() {
     return token_value;

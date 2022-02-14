@@ -12,7 +12,7 @@
 
 namespace drag {
     class token {
-    public:
+      public:
         drag::token_type::token_literals type;
         const std::string lexeme;
         drag::base_token literal;
@@ -27,6 +27,5 @@ namespace drag {
         std::string to_string();
     };
 }
-
 
 #endif //DRAG_TOKEN_H

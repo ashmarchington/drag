@@ -5,16 +5,14 @@
 #ifndef DRAG_TYPE_MAPPER_H
 #define DRAG_TYPE_MAPPER_H
 
-
 #include <map>
 #include "../lexer/token_type.h"
 
 namespace drag {
     class type_mapper {
-    public:
+      public:
         static std::map<drag::token_type, std::string> build_type_map();
     };
 }
-
 
 #endif //DRAG_TYPE_MAPPER_H

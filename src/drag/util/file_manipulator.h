@@ -10,10 +10,9 @@
 
 namespace drag {
     class file_manipulator {
-    public:
+      public:
         static std::vector<char> read_bytes(const std::filesystem::path &path);
     };
 }
-
 
 #endif //DRAG_FILE_MANIPULATOR_H

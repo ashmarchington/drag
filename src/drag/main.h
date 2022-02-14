@@ -10,19 +10,19 @@
 #include <string>
 
 namespace drag {
-    /**
-     * return states
-     */
-    enum class STATE : int {
+/**
+ * return states
+ */
+    enum class State : int {
         success = 0,
         failure = 64
     };
 
-    /**
-     * main driver class
-     */
+/**
+ * main driver class
+ */
     class main {
-    public:
+      public:
         /**
          * List of errors to print to user
          */
@@ -46,7 +46,7 @@ namespace drag {
          */
         bool has_error() const;
 
-    private:
+      private:
         mutable bool error = false;
 
         void set_error();
@@ -58,6 +58,5 @@ namespace drag {
         void run(const std::vector<char> &data);
     };
 }
-
 
 #endif //DRAG_MAIN_H

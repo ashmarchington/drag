@@ -9,7 +9,7 @@
 #include "lexer/scanner/scanner.h"
 #include "lexer/token.h"
 
-std::vector<std::string> drag::main::error_list;
+std::vector<std::pair<std::string, int>> drag::main::error_list;
 
 void drag::main::parse(const std::filesystem::path &path) {
     run_file(path);
@@ -42,14 +42,14 @@ void drag::main::run_prompt() {
         }
         std::vector<char> result(line.begin(), line.end());
         run(result);
-        main::error = false;
+        error = false;
     }
 }
 
 void drag::main::run(const std::vector<char> &data) {
     auto scanner = drag::scanner(data);
     std::vector<drag::token> token_list = scanner.scan_tokens();
-    for (auto t: token_list) {
+    for (auto t : token_list) {
         std::cout << t.to_string() << std::endl;
     }
     set_error();
