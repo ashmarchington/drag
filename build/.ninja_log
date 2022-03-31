@@ -1,0 +1,20 @@
+# ninja log v5
+2034	2231	1646322377794602279	Drag	7958f0be8e3e6e7f
+6974	8905	1646296141872355264	CMakeFiles/Drag.dir/src/drag/lexer/token_literal/number_token.cpp.o	c1b80af68a5fb049
+5911	8661	1646296141625006951	CMakeFiles/Drag.dir/src/drag/util/type_mapper.cpp.o	57084a1179c2dcad
+12	2034	1646322377590059843	CMakeFiles/Drag.dir/src/drag/main.cpp.o	933c9209b303751
+3861	5910	1646296138869592622	CMakeFiles/Drag.dir/src/drag/lexer/token_type.cpp.o	7ae224a94bc8c49b
+8	8702	1646296141658573753	CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.o	e29d14f863b28794
+10	3860	1646296136819672234	CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.o	c1906e92ef9c97bc
+6794	6974	1646296139939089800	CMakeFiles/Drag.dir/src/drag/util/iterator.cpp.o	ba22a098c0c3089e
+7	6794	1646296139753011228	CMakeFiles/Drag.dir/src/drag/util/file_manipulator.cpp.o	fd7c47099629454f
+7279	7639	1646296140608136722	CMakeFiles/Drag.dir/src/drag/exception/drag_exception.cpp.o	b37f2786e83b3125
+6947	8947	1646296141902348282	CMakeFiles/Drag.dir/src/drag/lexer/token_literal/string_token.cpp.o	3d69cde4a8fe9dee
+11	4688	1646296137651111789	CMakeFiles/Drag.dir/src/drag/error/handler.cpp.o	ac255c3035131fd1
+4689	6947	1646296139900652769	CMakeFiles/Drag.dir/src/drag/lexer/token_literal/base_token.cpp.o	d8ce793852e5fbc5
+6183	8423	1646296141365604469	CMakeFiles/Drag.dir/src/drag/util/string_object.cpp.o	360735e03817ab14
+4	6183	1646296139113202610	CMakeFiles/Drag.dir/main.cpp.o	e664cd2e8b201f9f
+40	3993	1646337886435586266	CMakeFiles/Drag.dir/main.cpp.o	e664cd2e8b201f9f
+42	4224	1646337886674484824	CMakeFiles/Drag.dir/src/drag/main.cpp.o	933c9209b303751
+45	4737	1646337887189991890	CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.o	e29d14f863b28794
+4738	4978	1646337887437202922	Drag	7958f0be8e3e6e7f

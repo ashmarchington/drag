@@ -13,7 +13,7 @@ namespace drag {
 /**
  * return states
  */
-    enum class State : int {
+    enum class state : int {
         success = 0,
         failure = 64
     };

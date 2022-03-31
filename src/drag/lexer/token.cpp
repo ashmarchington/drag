@@ -8,7 +8,7 @@
 #include "token_type.h"
 
 std::string drag::token::to_string() {
-    return "Lexeme '"+ lexeme + "'. Token: " + std::to_string(static_cast<int>(type));
+    return "Lexeme '" + lexeme + "'. Token: " + std::to_string(static_cast<int>(type));
 }
 
 drag::token::token(drag::token_type::token_literals type, std::string lexeme, drag::base_token literal, int line_number)

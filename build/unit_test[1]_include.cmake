@@ -1,5 +1,0 @@
-if(EXISTS "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build/unit_test[1]_tests.cmake")
-  include("/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build/unit_test[1]_tests.cmake")
-else()
-  add_test(unit_test_NOT_BUILT unit_test_NOT_BUILT)
-endif()

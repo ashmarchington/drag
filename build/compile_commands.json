@@ -1,0 +1,147 @@
+[
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Drag.dir/main.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/main.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/main.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Drag.dir/src/drag/main.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/main.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/main.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Drag.dir/src/drag/util/file_manipulator.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/file_manipulator.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/file_manipulator.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/scanner/scanner.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/scanner/scanner.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Drag.dir/src/drag/error/handler.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/error/handler.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/error/handler.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Drag.dir/src/drag/lexer/token_type.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_type.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_type.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Drag.dir/src/drag/lexer/token_literal/base_token.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_literal/base_token.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_literal/base_token.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Drag.dir/src/drag/util/string_object.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/string_object.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/string_object.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Drag.dir/src/drag/util/type_mapper.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/type_mapper.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/type_mapper.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Drag.dir/src/drag/util/iterator.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/iterator.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/iterator.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Drag.dir/src/drag/lexer/token_literal/string_token.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_literal/string_token.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_literal/string_token.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Drag.dir/src/drag/lexer/token_literal/number_token.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_literal/number_token.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_literal/number_token.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Drag.dir/src/drag/exception/drag_exception.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/exception/drag_exception.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/exception/drag_exception.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Test.dir/test/unit_test.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/test/unit_test.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/test/unit_test.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Test.dir/test/test_cases/file_manipulator_test.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/test/test_cases/file_manipulator_test.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/test/test_cases/file_manipulator_test.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Test.dir/src/drag/main.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/main.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/main.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Test.dir/src/drag/util/file_manipulator.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/file_manipulator.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/file_manipulator.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Test.dir/src/drag/lexer/scanner/scanner.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/scanner/scanner.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/scanner/scanner.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Test.dir/src/drag/lexer/token.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Test.dir/src/drag/error/handler.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/error/handler.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/error/handler.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Test.dir/src/drag/lexer/token_type.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_type.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_type.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Test.dir/src/drag/lexer/token_literal/base_token.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_literal/base_token.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_literal/base_token.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Test.dir/src/drag/util/string_object.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/string_object.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/string_object.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Test.dir/src/drag/util/type_mapper.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/type_mapper.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/type_mapper.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Test.dir/src/drag/util/iterator.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/iterator.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/util/iterator.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Test.dir/src/drag/lexer/token_literal/string_token.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_literal/string_token.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_literal/string_token.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Test.dir/test/test_cases/token_type_test.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/test/test_cases/token_type_test.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/test/test_cases/token_type_test.cpp"
+},
+{
+  "directory": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/build",
+  "command": "/usr/bin/clang++ -g -std=gnu++2a -o CMakeFiles/Test.dir/src/drag/lexer/token_literal/number_token.cpp.o -c /Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_literal/number_token.cpp",
+  "file": "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/src/drag/lexer/token_literal/number_token.cpp"
+}
+]
