@@ -5,6 +5,6 @@
 #ifndef DRAG_TEST_INCLUDES_TEST_DEFINES_H_
 #define DRAG_TEST_INCLUDES_TEST_DEFINES_H_
 
-#define TEST_FILE_PATH "/Users/ashleymarchington/Documents/GitHub/CPlusPlus/Drag/test/_files/test.drg"
+#define TEST_FILE_PATH "./../test/_files/test.drg"
 
 #endif //DRAG_TEST_INCLUDES_TEST_DEFINES_H_

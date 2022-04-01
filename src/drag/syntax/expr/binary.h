@@ -14,6 +14,9 @@ namespace drag {
         [[maybe_unused]] drag::token token_operator;
         drag::expr right;
         binary(drag::expr left, drag::token token_operator, drag::expr right);
+
+        template<typename T>
+        drag::visitor<T> accept(visitor <T> visitor);
     };
 }
 

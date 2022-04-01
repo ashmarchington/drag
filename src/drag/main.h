@@ -22,7 +22,7 @@ namespace drag {
  * main driver class
  */
     class main {
-      public:
+    public:
         /**
          * List of errors to print to user
          */
@@ -46,7 +46,7 @@ namespace drag {
          */
         bool has_error() const;
 
-      private:
+    private:
         mutable bool error = false;
 
         void set_error();

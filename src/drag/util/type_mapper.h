@@ -10,7 +10,7 @@
 
 namespace drag {
     class type_mapper {
-      public:
+    public:
         static std::map<drag::token_type, std::string> build_type_map();
     };
 }

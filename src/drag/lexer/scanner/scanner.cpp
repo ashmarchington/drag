@@ -13,22 +13,22 @@
 drag::scanner::scanner(std::vector<char> data) : data(std::move(data)) {}
 
 std::unordered_map<std::string, drag::token_type::token_literals> drag::scanner::keywords = {
-    {"and", drag::token_type::token_literals::AND},
-    {"class", drag::token_type::token_literals::CLASS},
-    {"else", drag::token_type::token_literals::ELSE},
-    {"false", drag::token_type::token_literals::FALSE},
-    {"fun", drag::token_type::token_literals::FUN},
-    {"for", drag::token_type::token_literals::FOR},
-    {"if", drag::token_type::token_literals::IF},
-    {"nil", drag::token_type::token_literals::NIL},
-    {"or", drag::token_type::token_literals::OR},
-    {"print", drag::token_type::token_literals::PRINT},
-    {"return", drag::token_type::token_literals::RETURN},
-    {"super", drag::token_type::token_literals::SUPER},
-    {"this", drag::token_type::token_literals::THIS},
-    {"true", drag::token_type::token_literals::TRUE},
-    {"var", drag::token_type::token_literals::VAR},
-    {"while", drag::token_type::token_literals::WHILE},
+        {"and",    drag::token_type::token_literals::AND},
+        {"class",  drag::token_type::token_literals::CLASS},
+        {"else",   drag::token_type::token_literals::ELSE},
+        {"false",  drag::token_type::token_literals::FALSE},
+        {"fun",    drag::token_type::token_literals::FUN},
+        {"for",    drag::token_type::token_literals::FOR},
+        {"if",     drag::token_type::token_literals::IF},
+        {"nil",    drag::token_type::token_literals::NIL},
+        {"or",     drag::token_type::token_literals::OR},
+        {"print",  drag::token_type::token_literals::PRINT},
+        {"return", drag::token_type::token_literals::RETURN},
+        {"super",  drag::token_type::token_literals::SUPER},
+        {"this",   drag::token_type::token_literals::THIS},
+        {"true",   drag::token_type::token_literals::TRUE},
+        {"var",    drag::token_type::token_literals::VAR},
+        {"while",  drag::token_type::token_literals::WHILE},
 };
 
 std::vector<drag::token> drag::scanner::scan_tokens() {
@@ -119,12 +119,12 @@ void drag::scanner::add_token(drag::token_type::token_literals type,
                               std::string lexeme,
                               const drag::base_token &literal) {
     token_list.emplace_back(
-        drag::token(
-            type,
-            std::move(lexeme),
-            literal,
-            line
-        )
+            drag::token(
+                    type,
+                    std::move(lexeme),
+                    literal,
+                    line
+            )
     );
 }
 
@@ -173,14 +173,17 @@ void drag::scanner::add_number_token() {
         }
     }
     std::string num_value = convert_data_to_string();
-    add_token(token_type::token_literals::NUMBER, number_token(std::stof(num_value)));
+    add_token(token_type::token_literals::NUMBER, drag::number_token(std::stof(num_value)));
 }
+
 bool drag::scanner::is_alpha(char c) {
     return std::isalpha(c) || c == '_';
 }
+
 bool drag::scanner::is_alpha_numeric(char c) {
     return drag::scanner::is_alpha(c) || std::isdigit(c);
 }
+
 void drag::scanner::add_identifier_token() {
     while (is_alpha_numeric(peek())) {
         advance();
@@ -194,6 +197,7 @@ void drag::scanner::add_identifier_token() {
         add_token(type);
     }
 }
+
 std::string drag::scanner::convert_data_to_string() {
     auto literal_value = std::string();
     int begin = start;
@@ -203,6 +207,7 @@ std::string drag::scanner::convert_data_to_string() {
     }
     return literal_value;
 }
+
 std::string drag::scanner::convert_data_to_string(int add_start, int remove_from_end) {
     auto literal_value = std::string();
     size_t begin = (start + add_start);

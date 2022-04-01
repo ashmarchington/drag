@@ -7,5 +7,9 @@
 #include <utility>
 
 drag::binary::binary(drag::expr left, drag::token token_operator, drag::expr right)
-: left(left), token_operator(std::move(token_operator)), right(right) {}
+        : left(left), token_operator(std::move(token_operator)), right(right) {}
 
+template<typename T>
+drag::visitor<T> drag::binary::accept(drag::visitor<T> visitor) {
+    return visitor.visitBinaryExpr();
+}

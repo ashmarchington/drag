@@ -10,7 +10,7 @@
 
 namespace drag {
     class string_token : public base_token {
-      public:
+    public:
         std::string token_value;
 
         explicit string_token(std::string value);

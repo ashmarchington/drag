@@ -32,7 +32,7 @@ add_executable(
         src/drag/lexer/token_literal/number_token.h
         src/drag/exception/drag_exception.cpp
         src/drag/exception/drag_exception.h
-        src/drag/syntax/expr/binary.cpp src/drag/syntax/expr/binary.h)
+        src/drag/syntax/expr/binary.cpp src/drag/syntax/expr/binary.h src/drag/syntax/expr/grouping.cpp src/drag/syntax/expr/grouping.h src/drag/syntax/expr/literal.cpp src/drag/syntax/expr/literal.h src/drag/syntax/expr/unary.cpp src/drag/syntax/expr/unary.h src/drag/syntax/expr/visitors/visitor.cpp src/drag/syntax/expr/visitors/visitor.h)
 
 add_executable(
         Test

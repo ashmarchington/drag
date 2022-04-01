@@ -3,7 +3,6 @@
 //
 
 #include "token.h"
-#include "../util/iterator.h"
 #include <utility>
 #include "token_type.h"
 
@@ -12,7 +11,7 @@ std::string drag::token::to_string() {
 }
 
 drag::token::token(drag::token_type::token_literals type, std::string lexeme, drag::base_token literal, int line_number)
-    : type(type), lexeme(std::move(lexeme)), literal(std::move(literal)), line_number(line_number) {}
+        : type(type), lexeme(std::move(lexeme)), literal(std::move(literal)), line_number(line_number) {}
 
 drag::token::token() : type(drag::token_type::token_literals::NIL), line_number(0) {}
 

@@ -23,7 +23,7 @@ std::vector<char> drag::file_manipulator::read_bytes(const std::filesystem::path
     }
     std::vector<char> result(file_size);
     std::ifstream infile;
-    infile.exceptions(std::ifstream::failbit | std::ifstream::badbit | std::ifstream::ate);
+    infile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
     try {
         infile.open(path, std::ios::in | std::ifstream::binary);
     } catch (...) {

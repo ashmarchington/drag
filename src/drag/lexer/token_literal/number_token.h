@@ -9,7 +9,7 @@
 
 namespace drag {
     class number_token : public base_token {
-      public:
+    public:
         float token_value;
 
         explicit number_token(float value);

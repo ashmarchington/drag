@@ -9,12 +9,12 @@
 
 namespace drag {
     class handler {
-      public:
+    public:
         static void error(int line_number, const std::string &message);
 
         static void error(int line_number, const std::string &where, const std::string &message);
 
-      private:
+    private:
         static void report(int line_number, const std::string &where, const std::string &message);
     };
 }

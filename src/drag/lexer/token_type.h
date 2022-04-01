@@ -10,7 +10,7 @@
 
 namespace drag {
     class token_type {
-      public:
+    public:
         enum token_literals : int {
             // Single-character tokens.
             LEFT_PAREN = 0, RIGHT_PAREN, LEFT_BRACE, RIGHT_BRACE,
@@ -42,28 +42,31 @@ namespace drag {
 
             EOFI
         };
+
         /**
          * Returns definition for specific character
          *
          * @param c
-         * @return TokenType::TokenLiterals
+         * @return token_type::token_literals
          */
         static drag::token_type::token_literals get_one_char(char c);
+
         /**
          * Returns definition for character based on secondary character
          *
          * @param c
          * @param c2
-         * @return TokenType::TokenLiterals
+         * @return token_type::token_literals
          */
         static drag::token_type::token_literals get_two_char(char c, char c2);
+
         /**
          * Returns definition for character based on second and third characters
          *
          * @param c
          * @param c2
          * @param c3
-         * @return TokenType::TokenLiterals
+         * @return token_type::token_literals
          */
         static drag::token_type::token_literals get_three_char(char c, char c2, char c3);
     };

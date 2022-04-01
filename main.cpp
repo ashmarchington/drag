@@ -1,7 +1,7 @@
 #include <iostream>
 #include "src/drag/main.h"
 
-int main(int argc, char* argv[], char *envp[]) {
+int main(int argc, char* argv[], [[maybe_unused]] char *envp[]) {
     drag::main drag = drag::main();
 
     // Check if additional unnecessary args supplied

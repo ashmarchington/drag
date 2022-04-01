@@ -9,8 +9,9 @@
 
 namespace drag {
     class base_token : string_object {
-      public:
+    public:
         base_token() = default;
+
         std::string to_string() override;
     };
 }

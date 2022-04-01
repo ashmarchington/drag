@@ -49,7 +49,7 @@ void drag::main::run_prompt() {
 void drag::main::run(const std::vector<char> &data) {
     auto scanner = drag::scanner(data);
     std::vector<drag::token> token_list = scanner.scan_tokens();
-    for (auto t : token_list) {
+    for (auto t: token_list) {
         std::cout << t.to_string() << std::endl;
     }
     set_error();
