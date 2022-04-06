@@ -6,7 +6,7 @@
 #define DRAG_VISITOR_H
 
 namespace drag {
-    template<typename T>
+    template<class T>
     class visitor {
         virtual T visitAssignExpr() = 0;
         virtual T visitBinaryExpr() = 0;

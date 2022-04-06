@@ -6,7 +6,7 @@
 
 namespace drag {
     struct expr {
-        template<typename T>
+        template<class T>
         std::string accept(drag::visitor<T> visitor) {
             return "Called on Base Class";
         }

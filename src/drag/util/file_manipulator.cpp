@@ -23,7 +23,11 @@ std::vector<char> drag::file_manipulator::read_bytes(const std::filesystem::path
     }
     std::vector<char> result(file_size);
     std::ifstream infile;
+#if defined(__APPLE__)
+    infile.exceptions(std::ifstream::failbit | std::ifstream::badbit | std::ifstream::ate);
+#else
     infile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
+#endif
     try {
         infile.open(path, std::ios::in | std::ifstream::binary);
     } catch (...) {

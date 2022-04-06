@@ -36,8 +36,8 @@ std::vector<drag::token> drag::scanner::scan_tokens() {
         start = current;
         scan_token();
     }
-
-    token_list.emplace_back(drag::token(token_type::token_literals::EOFI, std::string(""), base_token(), line));
+    
+    token_list.emplace_back(drag::token(token_type::token_literals::EOFI, std::string(""), new base_token(), line));
 
     return token_list;
 }
@@ -104,20 +104,20 @@ char drag::scanner::advance() {
 }
 
 void drag::scanner::add_token(drag::token_type::token_literals type) {
-    add_token(type, base_token());
+    add_token(type, new base_token());
 }
 
 void drag::scanner::add_token(drag::token_type::token_literals type, std::string lexeme) {
-    add_token(type, std::move(lexeme), base_token());
+    add_token(type, std::move(lexeme), new base_token());
 }
 
-void drag::scanner::add_token(drag::token_type::token_literals type, const drag::base_token &literal) {
+void drag::scanner::add_token(drag::token_type::token_literals type, drag::base_token* literal) {
     add_token(type, convert_data_to_string(), literal);
 }
 
 void drag::scanner::add_token(drag::token_type::token_literals type,
                               std::string lexeme,
-                              const drag::base_token &literal) {
+                              drag::base_token* literal) {
     token_list.emplace_back(
             drag::token(
                     type,
@@ -151,7 +151,7 @@ void drag::scanner::add_string_token() {
     }
     advance();
     std::string string_value = convert_data_to_string(1, 1);
-    add_token(token_type::token_literals::STRING, string_value, string_token(string_value));
+    add_token(token_type::token_literals::STRING, string_value, new string_token(string_value));
 }
 
 char drag::scanner::peek_next() {
@@ -173,7 +173,7 @@ void drag::scanner::add_number_token() {
         }
     }
     std::string num_value = convert_data_to_string();
-    add_token(token_type::token_literals::NUMBER, drag::number_token(std::stof(num_value)));
+    add_token(token_type::token_literals::NUMBER, new drag::number_token(std::stof(num_value)));
 }
 
 bool drag::scanner::is_alpha(char c) {

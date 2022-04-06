@@ -16,7 +16,7 @@ namespace drag {
         unary(drag::token token_operator, drag::expr right)
                 : token_operator(std::move(token_operator)), right(right) {}
 
-        template<typename T>
+        template<class T>
         drag::visitor<T> accept(drag::visitor<T> visitor) {
             return visitor.visitUnaryExpr();
         }

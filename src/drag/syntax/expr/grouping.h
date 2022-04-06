@@ -13,7 +13,7 @@ namespace drag {
 
         explicit grouping(drag::expr expression) : expression(expression) {}
 
-        template<typename T>
+        template<class T>
         drag::visitor<T> accept(drag::visitor<T> visitor) {
             return visitor.visitGroupingExpr();
         }

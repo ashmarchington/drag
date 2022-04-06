@@ -46,9 +46,9 @@ namespace drag {
 
         void add_token(drag::token_type::token_literals type, std::string lexeme);
 
-        void add_token(drag::token_type::token_literals type, const drag::base_token &literal);
+        void add_token(drag::token_type::token_literals type, drag::base_token* literal);
 
-        void add_token(drag::token_type::token_literals type, std::string lexeme, const drag::base_token &literal);
+        void add_token(drag::token_type::token_literals type, std::string lexeme, drag::base_token* literal);
 
         void add_string_token();
 

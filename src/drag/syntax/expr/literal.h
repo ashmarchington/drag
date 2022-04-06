@@ -14,7 +14,7 @@ namespace drag {
 
         explicit literal(T value);
 
-        template<typename N>
+        template<class N>
         drag::visitor<N> accept(drag::visitor<N> visitor) {
             return visitor.visitLiteralExpr();
         }
