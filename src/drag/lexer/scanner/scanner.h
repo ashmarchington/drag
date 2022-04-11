@@ -57,7 +57,7 @@ namespace drag {
         void add_identifier_token();
 
     public:
-        explicit scanner(std::vector<char> data);
+        explicit scanner(std::vector<char>& data);
 
         [[nodiscard]] std::vector<token> scan_tokens();
     };

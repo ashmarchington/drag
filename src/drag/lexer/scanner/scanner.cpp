@@ -10,7 +10,7 @@
 #include "../token_literal/number_token.h"
 #include "../../error/handler.h"
 
-drag::scanner::scanner(std::vector<char> data) : data(std::move(data)) {}
+drag::scanner::scanner(std::vector<char>& data) : data(data) {}
 
 std::unordered_map<std::string, drag::token_type::token_literals> drag::scanner::keywords = {
         {"and",    drag::token_type::token_literals::AND},
