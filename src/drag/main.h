@@ -55,7 +55,7 @@ namespace drag {
 
         void run_prompt();
 
-        void run(const std::vector<char> &data);
+        void run(std::vector<char>& data);
     };
 }
 
