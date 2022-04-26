@@ -5,21 +5,23 @@
 #ifndef DRAG_VISITOR_H
 #define DRAG_VISITOR_H
 
+#include "../../expr.h"
+
 namespace drag {
     template<class T>
     class visitor {
-        virtual T visitAssignExpr() = 0;
-        virtual T visitBinaryExpr() = 0;
-        virtual T visitCallExpr() = 0;
-        virtual T visitGetExpr() = 0;
-        virtual T visitGroupingExpr() = 0;
-        virtual T visitLiteralExpr() = 0;
-        virtual T visitLogicalExpr() = 0;
-        virtual T visitSetExpr() = 0;
-        virtual T visitSuperExpr() = 0;
-        virtual T visitThisExpr() = 0;
-        virtual T visitUnaryExpr() = 0;
-        virtual T visitVariableExpr() = 0;
+        virtual T visitAssignExpr(drag::expr& expr) = 0;
+        virtual T visitBinaryExpr(drag::expr& expr) = 0;
+        virtual T visitCallExpr(drag::expr& expr) = 0;
+        virtual T visitGetExpr(drag::expr& expr) = 0;
+        virtual T visitGroupingExpr(drag::expr& expr) = 0;
+        virtual T visitLiteralExpr(drag::expr& expr) = 0;
+        virtual T visitLogicalExpr(drag::expr& expr) = 0;
+        virtual T visitSetExpr(drag::expr& expr) = 0;
+        virtual T visitSuperExpr(drag::expr& expr) = 0;
+        virtual T visitThisExpr(drag::expr& expr) = 0;
+        virtual T visitUnaryExpr(drag::expr& expr) = 0;
+        virtual T visitVariableExpr(drag::expr& expr) = 0;
     };
 }
 

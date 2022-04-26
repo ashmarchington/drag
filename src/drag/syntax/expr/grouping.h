@@ -15,7 +15,7 @@ namespace drag {
 
         template<class T>
         drag::visitor<T> accept(drag::visitor<T> visitor) {
-            return visitor.visitGroupingExpr();
+            return visitor.visitGroupingExpr(this);
         }
     };
 }

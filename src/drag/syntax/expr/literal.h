@@ -16,7 +16,7 @@ namespace drag {
 
         template<class N>
         drag::visitor<N> accept(drag::visitor<N> visitor) {
-            return visitor.visitLiteralExpr();
+            return visitor.visitLiteralExpr(this);
         }
     };
 
