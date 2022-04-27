@@ -41,7 +41,7 @@ namespace drag {
 
         /**
          * check if an error has occurred.
-         * used for early failure
+         * used for early return
          * @return
          */
         bool has_error() const;
@@ -55,7 +55,16 @@ namespace drag {
 
         void run_prompt();
 
-        void run(std::vector<char>& data);
+        /**
+         * Main entry point for language.
+         *
+         * Takes data parsed from file(s) or cmd
+         * and breaks this down into a digestible
+         * sequence for interpretation
+         *
+         * @param std::vector<char> data
+         */
+        void run(std::vector<char> &data);
     };
 }
 

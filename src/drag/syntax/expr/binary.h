@@ -7,16 +7,17 @@
 
 #include "../expr.h"
 #include "../../lexer/token.h"
+#include "visitors/visitor.h"
 
 namespace drag {
     struct binary : drag::expr {
         drag::expr left;
-        [[maybe_unused]] drag::token token_operator;
+        drag::token token_operator;
         drag::expr right;
+
         binary(drag::expr left, drag::token token_operator, drag::expr right);
 
-        template<class T>
-        drag::visitor<T> accept(drag::visitor<T> visitor) {
+        std::string accept(const drag::visitor &visitor) {
             return visitor.visitBinaryExpr(this);
         }
     };

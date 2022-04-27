@@ -6,6 +6,7 @@
 #define DRAG_GROUPING_H
 
 #include "../expr.h"
+#include "visitors/visitor.h"
 
 namespace drag {
     struct grouping : drag::expr {
@@ -13,8 +14,7 @@ namespace drag {
 
         explicit grouping(drag::expr expression) : expression(expression) {}
 
-        template<class T>
-        drag::visitor<T> accept(drag::visitor<T> visitor) {
+        std::string accept(const drag::visitor &visitor) {
             return visitor.visitGroupingExpr(this);
         }
     };

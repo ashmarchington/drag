@@ -10,7 +10,7 @@
 #include "../token_literal/number_token.h"
 #include "../../error/handler.h"
 
-drag::scanner::scanner(std::vector<char>& data) : data(data) {}
+drag::scanner::scanner(std::vector<char> &data) : data(data) {}
 
 std::unordered_map<std::string, drag::token_type::token_literals> drag::scanner::keywords = {
         {"and",    drag::token_type::token_literals::AND},
@@ -36,7 +36,7 @@ std::vector<drag::token> drag::scanner::scan_tokens() {
         start = current;
         scan_token();
     }
-    
+
     token_list.emplace_back(drag::token(token_type::token_literals::EOFI, std::string(""), new base_token(), line));
 
     return token_list;
@@ -111,13 +111,13 @@ void drag::scanner::add_token(drag::token_type::token_literals type, std::string
     add_token(type, std::move(lexeme), new base_token());
 }
 
-void drag::scanner::add_token(drag::token_type::token_literals type, drag::base_token* literal) {
+void drag::scanner::add_token(drag::token_type::token_literals type, drag::base_token *literal) {
     add_token(type, convert_data_to_string(), literal);
 }
 
 void drag::scanner::add_token(drag::token_type::token_literals type,
                               std::string lexeme,
-                              drag::base_token* literal) {
+                              drag::base_token *literal) {
     token_list.emplace_back(
             drag::token(
                     type,

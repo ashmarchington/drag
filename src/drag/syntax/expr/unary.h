@@ -7,6 +7,7 @@
 
 #include "../expr.h"
 #include "../../lexer/token.h"
+#include "visitors/visitor.h"
 
 namespace drag {
     struct unary : drag::expr {
@@ -16,8 +17,7 @@ namespace drag {
         unary(drag::token token_operator, drag::expr right)
                 : token_operator(std::move(token_operator)), right(right) {}
 
-        template<class T>
-        drag::visitor<T> accept(drag::visitor<T> visitor) {
+        std::string accept(const drag::visitor &visitor) {
             return visitor.visitUnaryExpr(this);
         }
     };

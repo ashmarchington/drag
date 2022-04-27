@@ -46,7 +46,7 @@ void drag::main::run_prompt() {
     }
 }
 
-void drag::main::run(std::vector<char>& data) {
+void drag::main::run(std::vector<char> &data) {
     auto scanner = drag::scanner(data);
     std::vector<drag::token> token_list = scanner.scan_tokens();
     for (auto t: token_list) {

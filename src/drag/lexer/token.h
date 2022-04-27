@@ -15,14 +15,14 @@ namespace drag {
     public:
         drag::token_type::token_literals type;
         const std::string lexeme;
-        drag::base_token* literal;
+        drag::base_token *literal;
         const int line_number;
 
         token();
 
         explicit token(drag::token_type::token_literals type);
 
-        token(drag::token_type::token_literals type, std::string lexeme, drag::base_token* literal, int line_number);
+        token(drag::token_type::token_literals type, std::string lexeme, drag::base_token *literal, int line_number);
 
         std::string to_string();
     };

@@ -46,9 +46,9 @@ namespace drag {
 
         void add_token(drag::token_type::token_literals type, std::string lexeme);
 
-        void add_token(drag::token_type::token_literals type, drag::base_token* literal);
+        void add_token(drag::token_type::token_literals type, drag::base_token *literal);
 
-        void add_token(drag::token_type::token_literals type, std::string lexeme, drag::base_token* literal);
+        void add_token(drag::token_type::token_literals type, std::string lexeme, drag::base_token *literal);
 
         void add_string_token();
 
@@ -57,8 +57,17 @@ namespace drag {
         void add_identifier_token();
 
     public:
-        explicit scanner(std::vector<char>& data);
+        explicit scanner(std::vector<char> &data);
 
+        /**
+         * Main driver of scanner.
+         *
+         * Loops through internal vector of char
+         * to group sections into token format
+         * for further parsing.
+         *
+         * @return std::vector<drag::token>
+         */
         [[nodiscard]] std::vector<token> scan_tokens();
     };
 }

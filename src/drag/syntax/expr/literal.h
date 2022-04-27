@@ -6,6 +6,7 @@
 #define DRAG_LITERAL_H
 
 #include "../expr.h"
+#include "visitors/visitor.h"
 
 namespace drag {
     template<typename T>
@@ -14,8 +15,7 @@ namespace drag {
 
         explicit literal(T value);
 
-        template<class N>
-        drag::visitor<N> accept(drag::visitor<N> visitor) {
+        std::string accept(const drag::visitor &visitor) {
             return visitor.visitLiteralExpr(this);
         }
     };

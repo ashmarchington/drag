@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/Test.dir/src/drag/error/handler.cpp.o"
+  "CMakeFiles/Test.dir/src/drag/error/handler.cpp.o.d"
+  "CMakeFiles/Test.dir/src/drag/lexer/scanner/scanner.cpp.o"
+  "CMakeFiles/Test.dir/src/drag/lexer/scanner/scanner.cpp.o.d"
+  "CMakeFiles/Test.dir/src/drag/lexer/token.cpp.o"
+  "CMakeFiles/Test.dir/src/drag/lexer/token.cpp.o.d"
+  "CMakeFiles/Test.dir/src/drag/lexer/token_literal/base_token.cpp.o"
+  "CMakeFiles/Test.dir/src/drag/lexer/token_literal/base_token.cpp.o.d"
+  "CMakeFiles/Test.dir/src/drag/lexer/token_literal/number_token.cpp.o"
+  "CMakeFiles/Test.dir/src/drag/lexer/token_literal/number_token.cpp.o.d"
+  "CMakeFiles/Test.dir/src/drag/lexer/token_literal/string_token.cpp.o"
+  "CMakeFiles/Test.dir/src/drag/lexer/token_literal/string_token.cpp.o.d"
+  "CMakeFiles/Test.dir/src/drag/lexer/token_type.cpp.o"
+  "CMakeFiles/Test.dir/src/drag/lexer/token_type.cpp.o.d"
+  "CMakeFiles/Test.dir/src/drag/main.cpp.o"
+  "CMakeFiles/Test.dir/src/drag/main.cpp.o.d"
+  "CMakeFiles/Test.dir/src/drag/syntax/expr/binary.cpp.o"
+  "CMakeFiles/Test.dir/src/drag/syntax/expr/binary.cpp.o.d"
+  "CMakeFiles/Test.dir/src/drag/util/file_manipulator.cpp.o"
+  "CMakeFiles/Test.dir/src/drag/util/file_manipulator.cpp.o.d"
+  "CMakeFiles/Test.dir/src/drag/util/iterator.cpp.o"
+  "CMakeFiles/Test.dir/src/drag/util/iterator.cpp.o.d"
+  "CMakeFiles/Test.dir/src/drag/util/string_object.cpp.o"
+  "CMakeFiles/Test.dir/src/drag/util/string_object.cpp.o.d"
+  "CMakeFiles/Test.dir/src/drag/util/type_mapper.cpp.o"
+  "CMakeFiles/Test.dir/src/drag/util/type_mapper.cpp.o.d"
+  "CMakeFiles/Test.dir/test/test_cases/file_manipulator_test.cpp.o"
+  "CMakeFiles/Test.dir/test/test_cases/file_manipulator_test.cpp.o.d"
+  "CMakeFiles/Test.dir/test/test_cases/token_type_test.cpp.o"
+  "CMakeFiles/Test.dir/test/test_cases/token_type_test.cpp.o.d"
+  "CMakeFiles/Test.dir/test/unit_test.cpp.o"
+  "CMakeFiles/Test.dir/test/unit_test.cpp.o.d"
+  "Test"
+  "Test.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/Test.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

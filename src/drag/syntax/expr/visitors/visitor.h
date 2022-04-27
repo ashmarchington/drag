@@ -8,20 +8,31 @@
 #include "../../expr.h"
 
 namespace drag {
-    template<class T>
     class visitor {
-        virtual T visitAssignExpr(drag::expr& expr) = 0;
-        virtual T visitBinaryExpr(drag::expr& expr) = 0;
-        virtual T visitCallExpr(drag::expr& expr) = 0;
-        virtual T visitGetExpr(drag::expr& expr) = 0;
-        virtual T visitGroupingExpr(drag::expr& expr) = 0;
-        virtual T visitLiteralExpr(drag::expr& expr) = 0;
-        virtual T visitLogicalExpr(drag::expr& expr) = 0;
-        virtual T visitSetExpr(drag::expr& expr) = 0;
-        virtual T visitSuperExpr(drag::expr& expr) = 0;
-        virtual T visitThisExpr(drag::expr& expr) = 0;
-        virtual T visitUnaryExpr(drag::expr& expr) = 0;
-        virtual T visitVariableExpr(drag::expr& expr) = 0;
+    public:
+        std::string visitAssignExpr(struct drag::expr *expr) const;
+
+        std::string visitBinaryExpr(struct drag::expr *expr) const;
+
+        std::string visitCallExpr(struct drag::expr *expr) const;
+
+        std::string visitGetExpr(struct drag::expr *expr) const;
+
+        std::string visitGroupingExpr(struct drag::expr *expr) const;
+
+        std::string visitLiteralExpr(struct drag::expr *expr) const;
+
+        std::string visitLogicalExpr(struct drag::expr *expr) const;
+
+        std::string visitSetExpr(struct drag::expr *expr) const;
+
+        std::string visitSuperExpr(struct drag::expr *expr) const;
+
+        std::string visitThisExpr(struct drag::expr *expr) const;
+
+        std::string visitUnaryExpr(struct drag::expr *expr) const;
+
+        std::string visitVariableExpr(struct drag::expr *expr) const;
     };
 }
 
