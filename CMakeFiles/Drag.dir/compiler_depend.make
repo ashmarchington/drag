@@ -1719,9 +1719,6 @@ CMakeFiles/Drag.dir/src/drag/main.cpp.o: src/drag/main.cpp \
 
 CMakeFiles/Drag.dir/src/drag/syntax/ast/parser.cpp.o: src/drag/syntax/ast/parser.cpp \
   /usr/include/stdc-predef.h \
-  src/drag/syntax/ast/parser.h \
-  src/drag/syntax/expr/visitors/visitor.h \
-  src/drag/syntax/expr.h \
   /usr/include/c++/9/string \
   /usr/include/c++/9/x86_64-redhat-linux/bits/c++config.h \
   /usr/include/bits/wordsize.h \
@@ -1873,7 +1870,17 @@ CMakeFiles/Drag.dir/src/drag/syntax/ast/parser.cpp.o: src/drag/syntax/ast/parser
   /usr/include/asm-generic/errno.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/bits/types/error_t.h \
-  /usr/include/c++/9/bits/basic_string.tcc
+  /usr/include/c++/9/bits/basic_string.tcc \
+  src/drag/syntax/ast/parser.h \
+  /usr/include/c++/9/vector \
+  /usr/include/c++/9/bits/stl_uninitialized.h \
+  /usr/include/c++/9/utility \
+  /usr/include/c++/9/bits/stl_relops.h \
+  /usr/include/c++/9/bits/stl_vector.h \
+  /usr/include/c++/9/bits/stl_bvector.h \
+  /usr/include/c++/9/bits/vector.tcc \
+  src/drag/syntax/expr/visitors/visitor.h \
+  src/drag/syntax/expr.h
 
 CMakeFiles/Drag.dir/src/drag/syntax/expr/binary.cpp.o: src/drag/syntax/expr/binary.cpp \
   /usr/include/stdc-predef.h \
@@ -2554,7 +2561,6 @@ CMakeFiles/Drag.dir/src/drag/syntax/expr/unary.cpp.o: src/drag/syntax/expr/unary
 CMakeFiles/Drag.dir/src/drag/syntax/expr/visitors/visitor.cpp.o: src/drag/syntax/expr/visitors/visitor.cpp \
   /usr/include/stdc-predef.h \
   src/drag/syntax/expr/visitors/visitor.h \
-  src/drag/syntax/expr.h \
   /usr/include/c++/9/string \
   /usr/include/c++/9/x86_64-redhat-linux/bits/c++config.h \
   /usr/include/bits/wordsize.h \
@@ -2706,7 +2712,8 @@ CMakeFiles/Drag.dir/src/drag/syntax/expr/visitors/visitor.cpp.o: src/drag/syntax
   /usr/include/asm-generic/errno.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/bits/types/error_t.h \
-  /usr/include/c++/9/bits/basic_string.tcc
+  /usr/include/c++/9/bits/basic_string.tcc \
+  src/drag/syntax/expr.h
 
 CMakeFiles/Drag.dir/src/drag/util/file_manipulator.cpp.o: src/drag/util/file_manipulator.cpp \
   /usr/include/stdc-predef.h \

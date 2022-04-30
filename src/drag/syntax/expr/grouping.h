@@ -10,12 +10,12 @@
 
 namespace drag {
     struct grouping : drag::expr {
-        drag::expr expression;
+        drag::expr* expression;
 
-        explicit grouping(drag::expr expression) : expression(expression) {}
+        explicit grouping(drag::expr* expression) : expression(expression) {}
 
-        std::string accept(const drag::visitor &visitor) {
-            return visitor.visitGroupingExpr(this);
+        std::string accept(const drag::visitor &visitor)  {
+            return visitor.visit_grouping_expr(*this);
         }
     };
 }

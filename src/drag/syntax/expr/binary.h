@@ -11,14 +11,14 @@
 
 namespace drag {
     struct binary : drag::expr {
-        drag::expr left;
+        drag::expr* left;
         drag::token token_operator;
-        drag::expr right;
+        drag::expr* right;
 
-        binary(drag::expr left, drag::token token_operator, drag::expr right);
+        binary(drag::expr* left, drag::token token_operator, drag::expr* right);
 
-        std::string accept(const drag::visitor &visitor) {
-            return visitor.visitBinaryExpr(this);
+        std::string accept(const drag::visitor &visitor)  {
+            return visitor.visit_binary_expr(*this);
         }
     };
 }

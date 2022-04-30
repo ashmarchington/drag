@@ -15,8 +15,8 @@ namespace drag {
 
         explicit literal(T value);
 
-        std::string accept(const drag::visitor &visitor) {
-            return visitor.visitLiteralExpr(this);
+        std::string accept(const drag::visitor &visitor)  {
+            return visitor.visit_literal_expr(*this);
         }
     };
 

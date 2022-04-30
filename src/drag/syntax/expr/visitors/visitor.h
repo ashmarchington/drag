@@ -5,34 +5,24 @@
 #ifndef DRAG_VISITOR_H
 #define DRAG_VISITOR_H
 
+#include <string>
 #include "../../expr.h"
 
 namespace drag {
     class visitor {
     public:
-        std::string visitAssignExpr(struct drag::expr *expr) const;
-
-        std::string visitBinaryExpr(struct drag::expr *expr) const;
-
-        std::string visitCallExpr(struct drag::expr *expr) const;
-
-        std::string visitGetExpr(struct drag::expr *expr) const;
-
-        std::string visitGroupingExpr(struct drag::expr *expr) const;
-
-        std::string visitLiteralExpr(struct drag::expr *expr) const;
-
-        std::string visitLogicalExpr(struct drag::expr *expr) const;
-
-        std::string visitSetExpr(struct drag::expr *expr) const;
-
-        std::string visitSuperExpr(struct drag::expr *expr) const;
-
-        std::string visitThisExpr(struct drag::expr *expr) const;
-
-        std::string visitUnaryExpr(struct drag::expr *expr) const;
-
-        std::string visitVariableExpr(struct drag::expr *expr) const;
+        virtual std::string visit_assign_expr(struct drag::expr &expr) const = 0;
+        virtual std::string visit_binary_expr(struct drag::expr &expr) const = 0;
+        virtual std::string visit_call_expr(struct drag::expr &expr) const = 0;
+        virtual std::string visit_get_expr(struct drag::expr &expr) const = 0;
+        virtual std::string visit_grouping_expr(struct drag::expr &expr) const = 0;
+        virtual std::string visit_literal_expr(struct drag::expr &expr) const = 0;
+        virtual std::string visit_logical_expr(struct drag::expr &expr) const = 0;
+        virtual std::string visit_set_expr(struct drag::expr &expr) const = 0;
+        virtual std::string visit_super_expr(struct drag::expr &expr) const = 0;
+        virtual std::string visit_this_expr(struct drag::expr &expr) const = 0;
+        virtual std::string visit_unary_expr(struct drag::expr &expr) const = 0;
+        virtual std::string visit_variable_expr(struct drag::expr &expr) const = 0;
     };
 }
 

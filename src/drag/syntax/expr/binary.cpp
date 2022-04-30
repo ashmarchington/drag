@@ -6,6 +6,5 @@
 
 #include <utility>
 
-drag::binary::binary(drag::expr left, drag::token token_operator, drag::expr right)
+drag::binary::binary(drag::expr* left, drag::token token_operator, drag::expr* right)
         : left(left), token_operator(std::move(token_operator)), right(right) {}
-

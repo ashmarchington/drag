@@ -1,10 +1,6 @@
 CMakeFiles/Drag.dir/src/drag/syntax/ast/parser.cpp.o: \
  /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/parser.cpp \
- /usr/include/stdc-predef.h \
- /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/parser.h \
- /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/../expr/visitors/visitor.h \
- /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/../expr/visitors/../../expr.h \
- /usr/include/c++/9/string \
+ /usr/include/stdc-predef.h /usr/include/c++/9/string \
  /usr/include/c++/9/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/9/x86_64-redhat-linux/bits/os_defines.h \
@@ -104,4 +100,30 @@ CMakeFiles/Drag.dir/src/drag/syntax/ast/parser.cpp.o: \
  /usr/include/linux/errno.h /usr/include/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/bits/types/error_t.h \
- /usr/include/c++/9/bits/basic_string.tcc
+ /usr/include/c++/9/bits/basic_string.tcc /usr/include/c++/9/vector \
+ /usr/include/c++/9/bits/stl_uninitialized.h /usr/include/c++/9/utility \
+ /usr/include/c++/9/bits/stl_relops.h \
+ /usr/include/c++/9/bits/stl_vector.h \
+ /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
+ /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/parser.h \
+ /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/../expr/visitors/visitor.h \
+ /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/../expr/visitors/../../expr.h \
+ /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/../expr/binary.h \
+ /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/../expr/../expr.h \
+ /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/../expr/../../lexer/token.h \
+ /usr/include/c++/9/map /usr/include/c++/9/bits/stl_tree.h \
+ /usr/include/c++/9/ext/aligned_buffer.h \
+ /usr/include/c++/9/bits/node_handle.h /usr/include/c++/9/optional \
+ /usr/include/c++/9/stdexcept \
+ /usr/include/c++/9/bits/enable_special_members.h \
+ /usr/include/c++/9/bits/stl_map.h /usr/include/c++/9/tuple \
+ /usr/include/c++/9/array /usr/include/c++/9/bits/uses_allocator.h \
+ /usr/include/c++/9/bits/invoke.h /usr/include/c++/9/bits/stl_multimap.h \
+ /usr/include/c++/9/bits/erase_if.h \
+ /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/../expr/../../lexer/token_type.h \
+ /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/../expr/../../lexer/token_literal/base_token.h \
+ /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/../expr/../../lexer/token_literal/../../util/string_object.h \
+ /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/../expr/visitors/visitor.h \
+ /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/../expr/grouping.h \
+ /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/../expr/literal.h \
+ /home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/../expr/unary.h
