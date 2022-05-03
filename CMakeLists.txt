@@ -4,7 +4,7 @@ project(Drag)
 set(CMAKE_CXX_STANDARD 23)
 
 add_executable(
-        Drag
+        drag
         main.cpp
         src/drag/main.cpp
         src/drag/main.h
@@ -44,7 +44,7 @@ add_executable(
         src/drag/syntax/expr/visitors/visitor.h src/drag/syntax/ast/parser.cpp src/drag/syntax/ast/parser.h)
 
 add_executable(
-        Test
+        unit_test
         test/unit_test.cpp
         test/test_cases/file_manipulator_test.cpp
         src/drag/main.cpp

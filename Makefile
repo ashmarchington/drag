@@ -117,37 +117,37 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Drag
+# Target rules for targets named drag
 
 # Build rule for target.
-Drag: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Drag
-.PHONY : Drag
+drag: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 drag
+.PHONY : drag
 
 # fast build rule for target.
-Drag/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/build
-.PHONY : Drag/fast
+drag/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/build
+.PHONY : drag/fast
 
 #=============================================================================
-# Target rules for targets named Test
+# Target rules for targets named unit_test
 
 # Build rule for target.
-Test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Test
-.PHONY : Test
+unit_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unit_test
+.PHONY : unit_test
 
 # fast build rule for target.
-Test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/build
-.PHONY : Test/fast
+unit_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/build
+.PHONY : unit_test/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -155,7 +155,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -163,7 +163,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 src/drag/error/handler.o: src/drag/error/handler.cpp.o
@@ -171,8 +171,8 @@ src/drag/error/handler.o: src/drag/error/handler.cpp.o
 
 # target to build an object file
 src/drag/error/handler.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/error/handler.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/error/handler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/error/handler.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/error/handler.cpp.o
 .PHONY : src/drag/error/handler.cpp.o
 
 src/drag/error/handler.i: src/drag/error/handler.cpp.i
@@ -180,8 +180,8 @@ src/drag/error/handler.i: src/drag/error/handler.cpp.i
 
 # target to preprocess a source file
 src/drag/error/handler.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/error/handler.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/error/handler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/error/handler.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/error/handler.cpp.i
 .PHONY : src/drag/error/handler.cpp.i
 
 src/drag/error/handler.s: src/drag/error/handler.cpp.s
@@ -189,8 +189,8 @@ src/drag/error/handler.s: src/drag/error/handler.cpp.s
 
 # target to generate assembly for a file
 src/drag/error/handler.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/error/handler.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/error/handler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/error/handler.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/error/handler.cpp.s
 .PHONY : src/drag/error/handler.cpp.s
 
 src/drag/exception/drag_exception.o: src/drag/exception/drag_exception.cpp.o
@@ -198,7 +198,7 @@ src/drag/exception/drag_exception.o: src/drag/exception/drag_exception.cpp.o
 
 # target to build an object file
 src/drag/exception/drag_exception.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/exception/drag_exception.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/exception/drag_exception.cpp.o
 .PHONY : src/drag/exception/drag_exception.cpp.o
 
 src/drag/exception/drag_exception.i: src/drag/exception/drag_exception.cpp.i
@@ -206,7 +206,7 @@ src/drag/exception/drag_exception.i: src/drag/exception/drag_exception.cpp.i
 
 # target to preprocess a source file
 src/drag/exception/drag_exception.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/exception/drag_exception.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/exception/drag_exception.cpp.i
 .PHONY : src/drag/exception/drag_exception.cpp.i
 
 src/drag/exception/drag_exception.s: src/drag/exception/drag_exception.cpp.s
@@ -214,7 +214,7 @@ src/drag/exception/drag_exception.s: src/drag/exception/drag_exception.cpp.s
 
 # target to generate assembly for a file
 src/drag/exception/drag_exception.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/exception/drag_exception.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/exception/drag_exception.cpp.s
 .PHONY : src/drag/exception/drag_exception.cpp.s
 
 src/drag/lexer/scanner/scanner.o: src/drag/lexer/scanner/scanner.cpp.o
@@ -222,8 +222,8 @@ src/drag/lexer/scanner/scanner.o: src/drag/lexer/scanner/scanner.cpp.o
 
 # target to build an object file
 src/drag/lexer/scanner/scanner.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/scanner/scanner.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/scanner/scanner.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/scanner/scanner.cpp.o
 .PHONY : src/drag/lexer/scanner/scanner.cpp.o
 
 src/drag/lexer/scanner/scanner.i: src/drag/lexer/scanner/scanner.cpp.i
@@ -231,8 +231,8 @@ src/drag/lexer/scanner/scanner.i: src/drag/lexer/scanner/scanner.cpp.i
 
 # target to preprocess a source file
 src/drag/lexer/scanner/scanner.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/scanner/scanner.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/scanner/scanner.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/scanner/scanner.cpp.i
 .PHONY : src/drag/lexer/scanner/scanner.cpp.i
 
 src/drag/lexer/scanner/scanner.s: src/drag/lexer/scanner/scanner.cpp.s
@@ -240,8 +240,8 @@ src/drag/lexer/scanner/scanner.s: src/drag/lexer/scanner/scanner.cpp.s
 
 # target to generate assembly for a file
 src/drag/lexer/scanner/scanner.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/scanner/scanner.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/scanner/scanner.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/scanner/scanner.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/scanner/scanner.cpp.s
 .PHONY : src/drag/lexer/scanner/scanner.cpp.s
 
 src/drag/lexer/token.o: src/drag/lexer/token.cpp.o
@@ -249,8 +249,8 @@ src/drag/lexer/token.o: src/drag/lexer/token.cpp.o
 
 # target to build an object file
 src/drag/lexer/token.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/token.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/token.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/token.cpp.o
 .PHONY : src/drag/lexer/token.cpp.o
 
 src/drag/lexer/token.i: src/drag/lexer/token.cpp.i
@@ -258,8 +258,8 @@ src/drag/lexer/token.i: src/drag/lexer/token.cpp.i
 
 # target to preprocess a source file
 src/drag/lexer/token.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/token.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/token.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/token.cpp.i
 .PHONY : src/drag/lexer/token.cpp.i
 
 src/drag/lexer/token.s: src/drag/lexer/token.cpp.s
@@ -267,8 +267,8 @@ src/drag/lexer/token.s: src/drag/lexer/token.cpp.s
 
 # target to generate assembly for a file
 src/drag/lexer/token.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/token.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/token.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/token.cpp.s
 .PHONY : src/drag/lexer/token.cpp.s
 
 src/drag/lexer/token_literal/base_token.o: src/drag/lexer/token_literal/base_token.cpp.o
@@ -276,8 +276,8 @@ src/drag/lexer/token_literal/base_token.o: src/drag/lexer/token_literal/base_tok
 
 # target to build an object file
 src/drag/lexer/token_literal/base_token.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_literal/base_token.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/token_literal/base_token.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/token_literal/base_token.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/token_literal/base_token.cpp.o
 .PHONY : src/drag/lexer/token_literal/base_token.cpp.o
 
 src/drag/lexer/token_literal/base_token.i: src/drag/lexer/token_literal/base_token.cpp.i
@@ -285,8 +285,8 @@ src/drag/lexer/token_literal/base_token.i: src/drag/lexer/token_literal/base_tok
 
 # target to preprocess a source file
 src/drag/lexer/token_literal/base_token.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_literal/base_token.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/token_literal/base_token.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/token_literal/base_token.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/token_literal/base_token.cpp.i
 .PHONY : src/drag/lexer/token_literal/base_token.cpp.i
 
 src/drag/lexer/token_literal/base_token.s: src/drag/lexer/token_literal/base_token.cpp.s
@@ -294,8 +294,8 @@ src/drag/lexer/token_literal/base_token.s: src/drag/lexer/token_literal/base_tok
 
 # target to generate assembly for a file
 src/drag/lexer/token_literal/base_token.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_literal/base_token.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/token_literal/base_token.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/token_literal/base_token.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/token_literal/base_token.cpp.s
 .PHONY : src/drag/lexer/token_literal/base_token.cpp.s
 
 src/drag/lexer/token_literal/number_token.o: src/drag/lexer/token_literal/number_token.cpp.o
@@ -303,8 +303,8 @@ src/drag/lexer/token_literal/number_token.o: src/drag/lexer/token_literal/number
 
 # target to build an object file
 src/drag/lexer/token_literal/number_token.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_literal/number_token.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/token_literal/number_token.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/token_literal/number_token.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/token_literal/number_token.cpp.o
 .PHONY : src/drag/lexer/token_literal/number_token.cpp.o
 
 src/drag/lexer/token_literal/number_token.i: src/drag/lexer/token_literal/number_token.cpp.i
@@ -312,8 +312,8 @@ src/drag/lexer/token_literal/number_token.i: src/drag/lexer/token_literal/number
 
 # target to preprocess a source file
 src/drag/lexer/token_literal/number_token.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_literal/number_token.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/token_literal/number_token.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/token_literal/number_token.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/token_literal/number_token.cpp.i
 .PHONY : src/drag/lexer/token_literal/number_token.cpp.i
 
 src/drag/lexer/token_literal/number_token.s: src/drag/lexer/token_literal/number_token.cpp.s
@@ -321,8 +321,8 @@ src/drag/lexer/token_literal/number_token.s: src/drag/lexer/token_literal/number
 
 # target to generate assembly for a file
 src/drag/lexer/token_literal/number_token.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_literal/number_token.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/token_literal/number_token.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/token_literal/number_token.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/token_literal/number_token.cpp.s
 .PHONY : src/drag/lexer/token_literal/number_token.cpp.s
 
 src/drag/lexer/token_literal/string_token.o: src/drag/lexer/token_literal/string_token.cpp.o
@@ -330,8 +330,8 @@ src/drag/lexer/token_literal/string_token.o: src/drag/lexer/token_literal/string
 
 # target to build an object file
 src/drag/lexer/token_literal/string_token.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_literal/string_token.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/token_literal/string_token.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/token_literal/string_token.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/token_literal/string_token.cpp.o
 .PHONY : src/drag/lexer/token_literal/string_token.cpp.o
 
 src/drag/lexer/token_literal/string_token.i: src/drag/lexer/token_literal/string_token.cpp.i
@@ -339,8 +339,8 @@ src/drag/lexer/token_literal/string_token.i: src/drag/lexer/token_literal/string
 
 # target to preprocess a source file
 src/drag/lexer/token_literal/string_token.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_literal/string_token.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/token_literal/string_token.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/token_literal/string_token.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/token_literal/string_token.cpp.i
 .PHONY : src/drag/lexer/token_literal/string_token.cpp.i
 
 src/drag/lexer/token_literal/string_token.s: src/drag/lexer/token_literal/string_token.cpp.s
@@ -348,8 +348,8 @@ src/drag/lexer/token_literal/string_token.s: src/drag/lexer/token_literal/string
 
 # target to generate assembly for a file
 src/drag/lexer/token_literal/string_token.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_literal/string_token.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/token_literal/string_token.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/token_literal/string_token.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/token_literal/string_token.cpp.s
 .PHONY : src/drag/lexer/token_literal/string_token.cpp.s
 
 src/drag/lexer/token_type.o: src/drag/lexer/token_type.cpp.o
@@ -357,8 +357,8 @@ src/drag/lexer/token_type.o: src/drag/lexer/token_type.cpp.o
 
 # target to build an object file
 src/drag/lexer/token_type.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_type.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/token_type.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/token_type.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/token_type.cpp.o
 .PHONY : src/drag/lexer/token_type.cpp.o
 
 src/drag/lexer/token_type.i: src/drag/lexer/token_type.cpp.i
@@ -366,8 +366,8 @@ src/drag/lexer/token_type.i: src/drag/lexer/token_type.cpp.i
 
 # target to preprocess a source file
 src/drag/lexer/token_type.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_type.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/token_type.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/token_type.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/token_type.cpp.i
 .PHONY : src/drag/lexer/token_type.cpp.i
 
 src/drag/lexer/token_type.s: src/drag/lexer/token_type.cpp.s
@@ -375,8 +375,8 @@ src/drag/lexer/token_type.s: src/drag/lexer/token_type.cpp.s
 
 # target to generate assembly for a file
 src/drag/lexer/token_type.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/lexer/token_type.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/lexer/token_type.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/lexer/token_type.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/lexer/token_type.cpp.s
 .PHONY : src/drag/lexer/token_type.cpp.s
 
 src/drag/main.o: src/drag/main.cpp.o
@@ -384,8 +384,8 @@ src/drag/main.o: src/drag/main.cpp.o
 
 # target to build an object file
 src/drag/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/main.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/main.cpp.o
 .PHONY : src/drag/main.cpp.o
 
 src/drag/main.i: src/drag/main.cpp.i
@@ -393,8 +393,8 @@ src/drag/main.i: src/drag/main.cpp.i
 
 # target to preprocess a source file
 src/drag/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/main.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/main.cpp.i
 .PHONY : src/drag/main.cpp.i
 
 src/drag/main.s: src/drag/main.cpp.s
@@ -402,8 +402,8 @@ src/drag/main.s: src/drag/main.cpp.s
 
 # target to generate assembly for a file
 src/drag/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/main.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/main.cpp.s
 .PHONY : src/drag/main.cpp.s
 
 src/drag/syntax/ast/parser.o: src/drag/syntax/ast/parser.cpp.o
@@ -411,7 +411,7 @@ src/drag/syntax/ast/parser.o: src/drag/syntax/ast/parser.cpp.o
 
 # target to build an object file
 src/drag/syntax/ast/parser.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/ast/parser.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/ast/parser.cpp.o
 .PHONY : src/drag/syntax/ast/parser.cpp.o
 
 src/drag/syntax/ast/parser.i: src/drag/syntax/ast/parser.cpp.i
@@ -419,7 +419,7 @@ src/drag/syntax/ast/parser.i: src/drag/syntax/ast/parser.cpp.i
 
 # target to preprocess a source file
 src/drag/syntax/ast/parser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/ast/parser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/ast/parser.cpp.i
 .PHONY : src/drag/syntax/ast/parser.cpp.i
 
 src/drag/syntax/ast/parser.s: src/drag/syntax/ast/parser.cpp.s
@@ -427,7 +427,7 @@ src/drag/syntax/ast/parser.s: src/drag/syntax/ast/parser.cpp.s
 
 # target to generate assembly for a file
 src/drag/syntax/ast/parser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/ast/parser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/ast/parser.cpp.s
 .PHONY : src/drag/syntax/ast/parser.cpp.s
 
 src/drag/syntax/expr/binary.o: src/drag/syntax/expr/binary.cpp.o
@@ -435,8 +435,8 @@ src/drag/syntax/expr/binary.o: src/drag/syntax/expr/binary.cpp.o
 
 # target to build an object file
 src/drag/syntax/expr/binary.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/expr/binary.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/syntax/expr/binary.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/expr/binary.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/syntax/expr/binary.cpp.o
 .PHONY : src/drag/syntax/expr/binary.cpp.o
 
 src/drag/syntax/expr/binary.i: src/drag/syntax/expr/binary.cpp.i
@@ -444,8 +444,8 @@ src/drag/syntax/expr/binary.i: src/drag/syntax/expr/binary.cpp.i
 
 # target to preprocess a source file
 src/drag/syntax/expr/binary.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/expr/binary.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/syntax/expr/binary.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/expr/binary.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/syntax/expr/binary.cpp.i
 .PHONY : src/drag/syntax/expr/binary.cpp.i
 
 src/drag/syntax/expr/binary.s: src/drag/syntax/expr/binary.cpp.s
@@ -453,8 +453,8 @@ src/drag/syntax/expr/binary.s: src/drag/syntax/expr/binary.cpp.s
 
 # target to generate assembly for a file
 src/drag/syntax/expr/binary.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/expr/binary.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/syntax/expr/binary.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/expr/binary.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/syntax/expr/binary.cpp.s
 .PHONY : src/drag/syntax/expr/binary.cpp.s
 
 src/drag/syntax/expr/grouping.o: src/drag/syntax/expr/grouping.cpp.o
@@ -462,7 +462,7 @@ src/drag/syntax/expr/grouping.o: src/drag/syntax/expr/grouping.cpp.o
 
 # target to build an object file
 src/drag/syntax/expr/grouping.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/expr/grouping.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/expr/grouping.cpp.o
 .PHONY : src/drag/syntax/expr/grouping.cpp.o
 
 src/drag/syntax/expr/grouping.i: src/drag/syntax/expr/grouping.cpp.i
@@ -470,7 +470,7 @@ src/drag/syntax/expr/grouping.i: src/drag/syntax/expr/grouping.cpp.i
 
 # target to preprocess a source file
 src/drag/syntax/expr/grouping.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/expr/grouping.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/expr/grouping.cpp.i
 .PHONY : src/drag/syntax/expr/grouping.cpp.i
 
 src/drag/syntax/expr/grouping.s: src/drag/syntax/expr/grouping.cpp.s
@@ -478,7 +478,7 @@ src/drag/syntax/expr/grouping.s: src/drag/syntax/expr/grouping.cpp.s
 
 # target to generate assembly for a file
 src/drag/syntax/expr/grouping.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/expr/grouping.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/expr/grouping.cpp.s
 .PHONY : src/drag/syntax/expr/grouping.cpp.s
 
 src/drag/syntax/expr/literal.o: src/drag/syntax/expr/literal.cpp.o
@@ -486,7 +486,7 @@ src/drag/syntax/expr/literal.o: src/drag/syntax/expr/literal.cpp.o
 
 # target to build an object file
 src/drag/syntax/expr/literal.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/expr/literal.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/expr/literal.cpp.o
 .PHONY : src/drag/syntax/expr/literal.cpp.o
 
 src/drag/syntax/expr/literal.i: src/drag/syntax/expr/literal.cpp.i
@@ -494,7 +494,7 @@ src/drag/syntax/expr/literal.i: src/drag/syntax/expr/literal.cpp.i
 
 # target to preprocess a source file
 src/drag/syntax/expr/literal.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/expr/literal.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/expr/literal.cpp.i
 .PHONY : src/drag/syntax/expr/literal.cpp.i
 
 src/drag/syntax/expr/literal.s: src/drag/syntax/expr/literal.cpp.s
@@ -502,7 +502,7 @@ src/drag/syntax/expr/literal.s: src/drag/syntax/expr/literal.cpp.s
 
 # target to generate assembly for a file
 src/drag/syntax/expr/literal.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/expr/literal.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/expr/literal.cpp.s
 .PHONY : src/drag/syntax/expr/literal.cpp.s
 
 src/drag/syntax/expr/unary.o: src/drag/syntax/expr/unary.cpp.o
@@ -510,7 +510,7 @@ src/drag/syntax/expr/unary.o: src/drag/syntax/expr/unary.cpp.o
 
 # target to build an object file
 src/drag/syntax/expr/unary.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/expr/unary.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/expr/unary.cpp.o
 .PHONY : src/drag/syntax/expr/unary.cpp.o
 
 src/drag/syntax/expr/unary.i: src/drag/syntax/expr/unary.cpp.i
@@ -518,7 +518,7 @@ src/drag/syntax/expr/unary.i: src/drag/syntax/expr/unary.cpp.i
 
 # target to preprocess a source file
 src/drag/syntax/expr/unary.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/expr/unary.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/expr/unary.cpp.i
 .PHONY : src/drag/syntax/expr/unary.cpp.i
 
 src/drag/syntax/expr/unary.s: src/drag/syntax/expr/unary.cpp.s
@@ -526,7 +526,7 @@ src/drag/syntax/expr/unary.s: src/drag/syntax/expr/unary.cpp.s
 
 # target to generate assembly for a file
 src/drag/syntax/expr/unary.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/expr/unary.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/expr/unary.cpp.s
 .PHONY : src/drag/syntax/expr/unary.cpp.s
 
 src/drag/syntax/expr/visitors/visitor.o: src/drag/syntax/expr/visitors/visitor.cpp.o
@@ -534,7 +534,7 @@ src/drag/syntax/expr/visitors/visitor.o: src/drag/syntax/expr/visitors/visitor.c
 
 # target to build an object file
 src/drag/syntax/expr/visitors/visitor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/expr/visitors/visitor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/expr/visitors/visitor.cpp.o
 .PHONY : src/drag/syntax/expr/visitors/visitor.cpp.o
 
 src/drag/syntax/expr/visitors/visitor.i: src/drag/syntax/expr/visitors/visitor.cpp.i
@@ -542,7 +542,7 @@ src/drag/syntax/expr/visitors/visitor.i: src/drag/syntax/expr/visitors/visitor.c
 
 # target to preprocess a source file
 src/drag/syntax/expr/visitors/visitor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/expr/visitors/visitor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/expr/visitors/visitor.cpp.i
 .PHONY : src/drag/syntax/expr/visitors/visitor.cpp.i
 
 src/drag/syntax/expr/visitors/visitor.s: src/drag/syntax/expr/visitors/visitor.cpp.s
@@ -550,7 +550,7 @@ src/drag/syntax/expr/visitors/visitor.s: src/drag/syntax/expr/visitors/visitor.c
 
 # target to generate assembly for a file
 src/drag/syntax/expr/visitors/visitor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/syntax/expr/visitors/visitor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/syntax/expr/visitors/visitor.cpp.s
 .PHONY : src/drag/syntax/expr/visitors/visitor.cpp.s
 
 src/drag/util/file_manipulator.o: src/drag/util/file_manipulator.cpp.o
@@ -558,8 +558,8 @@ src/drag/util/file_manipulator.o: src/drag/util/file_manipulator.cpp.o
 
 # target to build an object file
 src/drag/util/file_manipulator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/file_manipulator.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/util/file_manipulator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/util/file_manipulator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/util/file_manipulator.cpp.o
 .PHONY : src/drag/util/file_manipulator.cpp.o
 
 src/drag/util/file_manipulator.i: src/drag/util/file_manipulator.cpp.i
@@ -567,8 +567,8 @@ src/drag/util/file_manipulator.i: src/drag/util/file_manipulator.cpp.i
 
 # target to preprocess a source file
 src/drag/util/file_manipulator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/file_manipulator.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/util/file_manipulator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/util/file_manipulator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/util/file_manipulator.cpp.i
 .PHONY : src/drag/util/file_manipulator.cpp.i
 
 src/drag/util/file_manipulator.s: src/drag/util/file_manipulator.cpp.s
@@ -576,8 +576,8 @@ src/drag/util/file_manipulator.s: src/drag/util/file_manipulator.cpp.s
 
 # target to generate assembly for a file
 src/drag/util/file_manipulator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/file_manipulator.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/util/file_manipulator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/util/file_manipulator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/util/file_manipulator.cpp.s
 .PHONY : src/drag/util/file_manipulator.cpp.s
 
 src/drag/util/iterator.o: src/drag/util/iterator.cpp.o
@@ -585,8 +585,8 @@ src/drag/util/iterator.o: src/drag/util/iterator.cpp.o
 
 # target to build an object file
 src/drag/util/iterator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/iterator.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/util/iterator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/util/iterator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/util/iterator.cpp.o
 .PHONY : src/drag/util/iterator.cpp.o
 
 src/drag/util/iterator.i: src/drag/util/iterator.cpp.i
@@ -594,8 +594,8 @@ src/drag/util/iterator.i: src/drag/util/iterator.cpp.i
 
 # target to preprocess a source file
 src/drag/util/iterator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/iterator.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/util/iterator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/util/iterator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/util/iterator.cpp.i
 .PHONY : src/drag/util/iterator.cpp.i
 
 src/drag/util/iterator.s: src/drag/util/iterator.cpp.s
@@ -603,8 +603,8 @@ src/drag/util/iterator.s: src/drag/util/iterator.cpp.s
 
 # target to generate assembly for a file
 src/drag/util/iterator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/iterator.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/util/iterator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/util/iterator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/util/iterator.cpp.s
 .PHONY : src/drag/util/iterator.cpp.s
 
 src/drag/util/string_object.o: src/drag/util/string_object.cpp.o
@@ -612,8 +612,8 @@ src/drag/util/string_object.o: src/drag/util/string_object.cpp.o
 
 # target to build an object file
 src/drag/util/string_object.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/string_object.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/util/string_object.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/util/string_object.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/util/string_object.cpp.o
 .PHONY : src/drag/util/string_object.cpp.o
 
 src/drag/util/string_object.i: src/drag/util/string_object.cpp.i
@@ -621,8 +621,8 @@ src/drag/util/string_object.i: src/drag/util/string_object.cpp.i
 
 # target to preprocess a source file
 src/drag/util/string_object.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/string_object.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/util/string_object.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/util/string_object.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/util/string_object.cpp.i
 .PHONY : src/drag/util/string_object.cpp.i
 
 src/drag/util/string_object.s: src/drag/util/string_object.cpp.s
@@ -630,8 +630,8 @@ src/drag/util/string_object.s: src/drag/util/string_object.cpp.s
 
 # target to generate assembly for a file
 src/drag/util/string_object.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/string_object.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/util/string_object.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/util/string_object.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/util/string_object.cpp.s
 .PHONY : src/drag/util/string_object.cpp.s
 
 src/drag/util/type_mapper.o: src/drag/util/type_mapper.cpp.o
@@ -639,8 +639,8 @@ src/drag/util/type_mapper.o: src/drag/util/type_mapper.cpp.o
 
 # target to build an object file
 src/drag/util/type_mapper.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/type_mapper.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/util/type_mapper.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/util/type_mapper.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/util/type_mapper.cpp.o
 .PHONY : src/drag/util/type_mapper.cpp.o
 
 src/drag/util/type_mapper.i: src/drag/util/type_mapper.cpp.i
@@ -648,8 +648,8 @@ src/drag/util/type_mapper.i: src/drag/util/type_mapper.cpp.i
 
 # target to preprocess a source file
 src/drag/util/type_mapper.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/type_mapper.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/util/type_mapper.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/util/type_mapper.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/util/type_mapper.cpp.i
 .PHONY : src/drag/util/type_mapper.cpp.i
 
 src/drag/util/type_mapper.s: src/drag/util/type_mapper.cpp.s
@@ -657,8 +657,8 @@ src/drag/util/type_mapper.s: src/drag/util/type_mapper.cpp.s
 
 # target to generate assembly for a file
 src/drag/util/type_mapper.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Drag.dir/build.make CMakeFiles/Drag.dir/src/drag/util/type_mapper.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/src/drag/util/type_mapper.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/drag.dir/build.make CMakeFiles/drag.dir/src/drag/util/type_mapper.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/src/drag/util/type_mapper.cpp.s
 .PHONY : src/drag/util/type_mapper.cpp.s
 
 test/test_cases/file_manipulator_test.o: test/test_cases/file_manipulator_test.cpp.o
@@ -666,7 +666,7 @@ test/test_cases/file_manipulator_test.o: test/test_cases/file_manipulator_test.c
 
 # target to build an object file
 test/test_cases/file_manipulator_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/test/test_cases/file_manipulator_test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/test/test_cases/file_manipulator_test.cpp.o
 .PHONY : test/test_cases/file_manipulator_test.cpp.o
 
 test/test_cases/file_manipulator_test.i: test/test_cases/file_manipulator_test.cpp.i
@@ -674,7 +674,7 @@ test/test_cases/file_manipulator_test.i: test/test_cases/file_manipulator_test.c
 
 # target to preprocess a source file
 test/test_cases/file_manipulator_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/test/test_cases/file_manipulator_test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/test/test_cases/file_manipulator_test.cpp.i
 .PHONY : test/test_cases/file_manipulator_test.cpp.i
 
 test/test_cases/file_manipulator_test.s: test/test_cases/file_manipulator_test.cpp.s
@@ -682,7 +682,7 @@ test/test_cases/file_manipulator_test.s: test/test_cases/file_manipulator_test.c
 
 # target to generate assembly for a file
 test/test_cases/file_manipulator_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/test/test_cases/file_manipulator_test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/test/test_cases/file_manipulator_test.cpp.s
 .PHONY : test/test_cases/file_manipulator_test.cpp.s
 
 test/test_cases/token_type_test.o: test/test_cases/token_type_test.cpp.o
@@ -690,7 +690,7 @@ test/test_cases/token_type_test.o: test/test_cases/token_type_test.cpp.o
 
 # target to build an object file
 test/test_cases/token_type_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/test/test_cases/token_type_test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/test/test_cases/token_type_test.cpp.o
 .PHONY : test/test_cases/token_type_test.cpp.o
 
 test/test_cases/token_type_test.i: test/test_cases/token_type_test.cpp.i
@@ -698,7 +698,7 @@ test/test_cases/token_type_test.i: test/test_cases/token_type_test.cpp.i
 
 # target to preprocess a source file
 test/test_cases/token_type_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/test/test_cases/token_type_test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/test/test_cases/token_type_test.cpp.i
 .PHONY : test/test_cases/token_type_test.cpp.i
 
 test/test_cases/token_type_test.s: test/test_cases/token_type_test.cpp.s
@@ -706,7 +706,7 @@ test/test_cases/token_type_test.s: test/test_cases/token_type_test.cpp.s
 
 # target to generate assembly for a file
 test/test_cases/token_type_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/test/test_cases/token_type_test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/test/test_cases/token_type_test.cpp.s
 .PHONY : test/test_cases/token_type_test.cpp.s
 
 test/unit_test.o: test/unit_test.cpp.o
@@ -714,7 +714,7 @@ test/unit_test.o: test/unit_test.cpp.o
 
 # target to build an object file
 test/unit_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/test/unit_test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/test/unit_test.cpp.o
 .PHONY : test/unit_test.cpp.o
 
 test/unit_test.i: test/unit_test.cpp.i
@@ -722,7 +722,7 @@ test/unit_test.i: test/unit_test.cpp.i
 
 # target to preprocess a source file
 test/unit_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/test/unit_test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/test/unit_test.cpp.i
 .PHONY : test/unit_test.cpp.i
 
 test/unit_test.s: test/unit_test.cpp.s
@@ -730,7 +730,7 @@ test/unit_test.s: test/unit_test.cpp.s
 
 # target to generate assembly for a file
 test/unit_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Test.dir/build.make CMakeFiles/Test.dir/test/unit_test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unit_test.dir/build.make CMakeFiles/unit_test.dir/test/unit_test.cpp.s
 .PHONY : test/unit_test.cpp.s
 
 # Help Target
@@ -741,8 +741,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Drag"
-	@echo "... Test"
+	@echo "... drag"
+	@echo "... unit_test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

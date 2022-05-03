@@ -1,4 +1,4 @@
-/home/ash/Documents/GitHub/personal/drag/CMakeFiles/Drag.dir
-/home/ash/Documents/GitHub/personal/drag/CMakeFiles/Test.dir
+/home/ash/Documents/GitHub/personal/drag/CMakeFiles/drag.dir
+/home/ash/Documents/GitHub/personal/drag/CMakeFiles/unit_test.dir
 /home/ash/Documents/GitHub/personal/drag/CMakeFiles/edit_cache.dir
 /home/ash/Documents/GitHub/personal/drag/CMakeFiles/rebuild_cache.dir
