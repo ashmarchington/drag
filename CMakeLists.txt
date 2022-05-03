@@ -3,6 +3,15 @@ project(Drag)
 
 set(CMAKE_CXX_STANDARD 23)
 
+#set(OUTPUT_EXE "drag" CACHE STRING "Executable Name")
+#option(TESTING "Enable Unit Test Directory" OFF)
+#
+#add_subdirectory(src)
+#
+#IF(TESTING)
+#    add_subdirectory(test)
+#ENDIF()
+add_compile_definitions(_GLIBCXX_USE_CXX11_ABI=0)
 add_executable(
         drag
         main.cpp
@@ -41,12 +50,16 @@ add_executable(
         src/drag/syntax/expr/unary.cpp
         src/drag/syntax/expr/unary.h
         src/drag/syntax/expr/visitors/visitor.cpp
-        src/drag/syntax/expr/visitors/visitor.h src/drag/syntax/ast/parser.cpp src/drag/syntax/ast/parser.h)
+        src/drag/syntax/expr/visitors/visitor.h
+        src/drag/syntax/ast/parser.cpp
+        src/drag/syntax/ast/parser.h)
 
 add_executable(
         unit_test
         test/unit_test.cpp
         test/test_cases/file_manipulator_test.cpp
+        test/includes/test_defines.h
+        test/test_cases/token_type_test.cpp
         src/drag/main.cpp
         src/drag/main.h
         src/drag/util/file_manipulator.cpp
@@ -69,8 +82,19 @@ add_executable(
         src/drag/util/iterator.h
         src/drag/lexer/token_literal/string_token.cpp
         src/drag/lexer/token_literal/string_token.h
-        test/includes/test_defines.h
-        test/test_cases/token_type_test.cpp
         src/drag/lexer/token_literal/number_token.cpp
         src/drag/lexer/token_literal/number_token.h
-        src/drag/syntax/expr/binary.cpp src/drag/syntax/expr/binary.h)
+        src/drag/exception/drag_exception.cpp
+        src/drag/exception/drag_exception.h
+        src/drag/syntax/expr/binary.cpp
+        src/drag/syntax/expr/binary.h
+        src/drag/syntax/expr/grouping.cpp
+        src/drag/syntax/expr/grouping.h
+        src/drag/syntax/expr/literal.cpp
+        src/drag/syntax/expr/literal.h
+        src/drag/syntax/expr/unary.cpp
+        src/drag/syntax/expr/unary.h
+        src/drag/syntax/expr/visitors/visitor.cpp
+        src/drag/syntax/expr/visitors/visitor.h
+        src/drag/syntax/ast/parser.cpp
+        src/drag/syntax/ast/parser.h)

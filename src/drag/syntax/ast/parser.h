@@ -17,23 +17,23 @@ namespace drag {
     class parser : public drag::visitor {
     private:
         std::string parenthesize(const std::string& name, drag::expr expr);
-        std::string parenthesize(const std::string& name, std::vector<struct drag::expr> expr_list);
+        std::string parenthesize(const std::string& name, std::vector<struct drag::expr*> expr_list);
     public:
         std::string print(drag::expr &expr);
-        std::string visit_assign_expr(struct drag::expr &expr);
-        std::string visit_binary_expr(struct drag::binary &expr);
-        std::string visit_call_expr(struct drag::expr &expr);
-        std::string visit_get_expr(struct drag::expr &expr);
-        std::string visit_grouping_expr(struct drag::grouping &expr);
+        std::string visit_assign_expr(struct drag::expr &expr) override;
+        std::string visit_binary_expr(struct drag::binary &expr) override;
+        std::string visit_call_expr(struct drag::expr &expr) override;
+        std::string visit_get_expr(struct drag::expr &expr) override;
+        std::string visit_grouping_expr(struct drag::grouping &expr) override;
 
         template<typename T>
         std::string visit_literal_expr(struct drag::literal<T> &expr);
-        std::string visit_logical_expr(struct drag::expr &expr);
-        std::string visit_set_expr(struct drag::expr &expr);
-        std::string visit_super_expr(struct drag::expr &expr);
-        std::string visit_this_expr(struct drag::expr &expr);
-        std::string visit_unary_expr(struct drag::unary &expr);
-        std::string visit_variable_expr(struct drag::expr &expr);
+        std::string visit_logical_expr(struct drag::expr &expr) override;
+        std::string visit_set_expr(struct drag::expr &expr) override;
+        std::string visit_super_expr(struct drag::expr &expr) override;
+        std::string visit_this_expr(struct drag::expr &expr) override;
+        std::string visit_unary_expr(struct drag::unary &expr) override;
+        std::string visit_variable_expr(struct drag::expr &expr) override;
     };
 }
 

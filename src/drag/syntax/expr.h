@@ -9,7 +9,7 @@ namespace drag {
     class visitor;
 
     struct expr {
-        std::string accept(const drag::visitor &visitor) { return {}; };
+        virtual std::string accept(drag::visitor &visitor) { return {}; };
     };
 }
 

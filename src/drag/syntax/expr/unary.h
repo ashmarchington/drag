@@ -11,15 +11,13 @@
 
 namespace drag {
     struct unary : drag::expr {
-        drag::token token_operator;
+        drag::token* token_operator;
         drag::expr* right;
 
-        unary(drag::token token_operator, drag::expr* right)
-                : token_operator(std::move(token_operator)), right(right) {}
+        unary(drag::token* token_operator, drag::expr* right)
+                : token_operator(token_operator), right(right) {}
 
-        std::string accept(const drag::visitor &visitor)  {
-            return visitor.visit_unary_expr(*this);
-        }
+        std::string accept(drag::visitor &visitor) override;
     };
 }
 

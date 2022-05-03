@@ -14,9 +14,7 @@ namespace drag {
 
         explicit grouping(drag::expr* expression) : expression(expression) {}
 
-        std::string accept(const drag::visitor &visitor)  {
-            return visitor.visit_grouping_expr(*this);
-        }
+        std::string accept(drag::visitor &visitor) override;
     };
 }
 

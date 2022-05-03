@@ -5,3 +5,6 @@
 #include "unary.h"
 #include <utility>
 
+std::string drag::unary::accept(drag::visitor &visitor) {
+    return visitor.visit_unary_expr(*this);
+}

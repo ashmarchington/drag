@@ -4,3 +4,6 @@
 
 #include "grouping.h"
 
+std::string drag::grouping::accept(drag::visitor &visitor) {
+    return visitor.visit_grouping_expr(*this);
+}
