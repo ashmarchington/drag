@@ -33,7 +33,7 @@ std::string drag::parser::parenthesize(const std::string &name, drag::expr* expr
 }
 
 std::string drag::parser::parenthesize(const std::string &name, std::vector<drag::expr*> expr_list) {
-    auto paren = std::string("(");
+    auto paren = std::string("(").append(name);
     for (auto & t : expr_list) {
         paren.append(" ").append(t->accept(*this));
     }
