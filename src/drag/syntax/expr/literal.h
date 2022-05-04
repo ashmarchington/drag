@@ -6,7 +6,7 @@
 #define DRAG_LITERAL_H
 
 #include <utility>
-
+#include <sstream>
 #include "../expr.h"
 #include "visitors/visitor.h"
 
@@ -46,19 +46,18 @@ namespace drag {
         }
     };
 
-
-    template<typename T>
     struct literal : drag::expr {
         std::string value;
 
+        template<typename T>
         explicit literal(T data);
 
         std::string accept(drag::visitor &visitor) override;
     };
 
     template<typename T>
-    literal<T>::literal(T data) {
-        value = std::string(TypeName<T>::get(data));
+    literal::literal(T data) {
+        value = TypeName<T>::get(data);
     }
 }
 

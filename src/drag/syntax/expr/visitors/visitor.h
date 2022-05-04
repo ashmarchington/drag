@@ -13,7 +13,6 @@ namespace drag {
     struct binary;
     struct unary;
     struct grouping;
-    template<typename T>
     struct literal;
 
     class visitor {
@@ -23,9 +22,7 @@ namespace drag {
         virtual std::string visit_call_expr(struct drag::expr &expr) = 0;
         virtual std::string visit_get_expr(struct drag::expr &expr) = 0;
         virtual std::string visit_grouping_expr(struct drag::grouping &expr) = 0;
-
-        template<typename T>
-        std::string visit_literal_expr(struct drag::literal<T> &expr);
+        virtual std::string visit_literal_expr(struct drag::literal &expr) = 0;
         virtual std::string visit_logical_expr(struct drag::expr &expr) = 0;
         virtual std::string visit_set_expr(struct drag::expr &expr) = 0;
         virtual std::string visit_super_expr(struct drag::expr &expr) = 0;
@@ -33,11 +30,6 @@ namespace drag {
         virtual std::string visit_unary_expr(struct drag::unary &expr) = 0;
         virtual std::string visit_variable_expr(struct drag::expr &expr) = 0;
     };
-
-    template<typename T>
-    std::string visitor::visit_literal_expr(literal<T> &expr) {
-        return std::string();
-    }
 }
 
 #endif //DRAG_VISITOR_H

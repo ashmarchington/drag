@@ -15,25 +15,20 @@ std::string drag::parser::visit_binary_expr(drag::binary &expr) {
 }
 
 std::string drag::parser::visit_grouping_expr(drag::grouping &expr) {
-    return parenthesize("group", *expr.expression);
+    return parenthesize("group", expr.expression);
 }
 
-template<typename T>
-std::string drag::parser::visit_literal_expr(drag::literal<T> &expr) {
-    if (expr.value == nullptr) {
-        return "nil";
-    }
-
+std::string drag::parser::visit_literal_expr(drag::literal &expr) {
     return expr.value;
 }
 
 std::string drag::parser::visit_unary_expr(drag::unary &expr) {
-    return parenthesize(expr.token_operator->lexeme, *expr.right);
+   return parenthesize(expr.token_operator->lexeme, expr.right);
 }
 
-std::string drag::parser::parenthesize(const std::string &name, drag::expr expr) {
+std::string drag::parser::parenthesize(const std::string &name, drag::expr* expr) {
     auto paren = std::string();
-    paren.append("(").append(name).append(" ").append(expr.accept(*this)).append(")");
+    paren.append("(").append(name).append(" ").append(expr->accept(*this)).append(")");
     return paren;
 }
 
