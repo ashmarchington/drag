@@ -9569,8 +9569,8 @@ namespace detail {
             }
         }
 
-        friend auto operator<<( std::ostream &os, Parser const &parser ) -> std::ostream& {
-            parser.writeToStream( os );
+        friend auto operator<<( std::ostream &os, Parser const &syntax_printer ) -> std::ostream& {
+            syntax_printer.writeToStream( os );
             return os;
         }
 
@@ -9593,7 +9593,7 @@ namespace detail {
         auto parse( std::string const& exeName, TokenStream const &tokens ) const -> InternalParseResult override {
 
             struct ParserInfo {
-                ParserBase const* parser = nullptr;
+                ParserBase const* syntax_printer = nullptr;
                 size_t count = 0;
             };
             const size_t totalParsers = m_options.size() + m_args.size();
@@ -9603,8 +9603,8 @@ namespace detail {
 
             {
                 size_t i = 0;
-                for (auto const &opt : m_options) parseInfos[i++].parser = &opt;
-                for (auto const &arg : m_args) parseInfos[i++].parser = &arg;
+                for (auto const &opt : m_options) parseInfos[i++].syntax_printer = &opt;
+                for (auto const &arg : m_args) parseInfos[i++].syntax_printer = &arg;
             }
 
             m_exeName.set( exeName );
@@ -9615,8 +9615,8 @@ namespace detail {
 
                 for( size_t i = 0; i < totalParsers; ++i ) {
                     auto&  parseInfo = parseInfos[i];
-                    if( parseInfo.parser->cardinality() == 0 || parseInfo.count < parseInfo.parser->cardinality() ) {
-                        result = parseInfo.parser->parse(exeName, result.value().remainingTokens());
+                    if( parseInfo.syntax_printer->cardinality() == 0 || parseInfo.count < parseInfo.syntax_printer->cardinality() ) {
+                        result = parseInfo.syntax_printer->parse(exeName, result.value().remainingTokens());
                         if (!result)
                             return result;
                         if (result.value().type() != ParseResultType::NoMatch) {
@@ -9644,13 +9644,13 @@ namespace detail {
     }
 } // namespace detail
 
-// A Combined parser
+// A Combined syntax_printer
 using detail::Parser;
 
-// A parser for options
+// A syntax_printer for options
 using detail::Opt;
 
-// A parser for arguments
+// A syntax_printer for arguments
 using detail::Arg;
 
 // Wrapper for argc, argv from main()
@@ -9659,13 +9659,13 @@ using detail::Args;
 // Specifies the name of the executable
 using detail::ExeName;
 
-// Convenience wrapper for option parser that specifies the help option
+// Convenience wrapper for option syntax_printer that specifies the help option
 using detail::Help;
 
 // enum of result types from a parse
 using detail::ParseResultType;
 
-// Result type for parser operation
+// Result type for syntax_printer operation
 using detail::ParserResult;
 
 }} // namespace Catch::clara
@@ -9958,14 +9958,14 @@ namespace Catch {
             elem = trim(elem);
         }
 
-        TestSpecParser parser(ITagAliasRegistry::get());
+        TestSpecParser syntax_printer(ITagAliasRegistry::get());
         if (!m_data.testsOrTags.empty()) {
             m_hasTestFilters = true;
             for (auto const& testOrTags : m_data.testsOrTags) {
-                parser.parse(testOrTags);
+                syntax_printer.parse(testOrTags);
             }
         }
-        m_testSpec = parser.testSpec();
+        m_testSpec = syntax_printer.testSpec();
     }
 
     std::string const& Config::getFilename() const {

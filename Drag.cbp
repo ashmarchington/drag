@@ -167,10 +167,10 @@
 			<Option target="drag"/>
 			<Option target="unit_test"/>
 		</Unit>
-		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/parser.cpp">
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/syntax_printer.cpp">
 			<Option target="drag"/>
 		</Unit>
-		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/parser.h">
+		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/syntax/ast/syntax_printer.h">
 			<Option target="drag"/>
 		</Unit>
 		<Unit filename="/home/ash/Documents/GitHub/personal/drag/src/drag/syntax/expr/binary.cpp">

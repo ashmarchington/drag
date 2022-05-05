@@ -7,7 +7,10 @@
 
 #include <string>
 #include "../../expr.h"
-#include "../../expr/binary.h"
+//#include "../../expr/binary.h"
+//#include "../../expr/unary.h"
+//#include "../../expr/grouping.h"
+//#include "../../expr/literal.h"
 
 namespace drag {
     struct binary;

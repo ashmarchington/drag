@@ -8,6 +8,7 @@
 #include "util/file_manipulator.h"
 #include "lexer/scanner/scanner.h"
 #include "lexer/token.h"
+#include "parser/parser.h"
 
 std::vector<std::pair<std::string, int>> drag::main::error_list;
 
@@ -49,6 +50,11 @@ void drag::main::run_prompt() {
 void drag::main::run(std::vector<char> &data) {
     auto scanner = drag::scanner(data);
     std::vector<drag::token> token_list = scanner.scan_tokens();
+
+    auto parser = drag::parser(token_list);
+
+    parser.expression();
+
     for (auto t: token_list) {
         std::cout << t.to_string() << std::endl;
     }

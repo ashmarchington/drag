@@ -2,8 +2,8 @@
 // Created by ash on 26/04/22.
 //
 
-#ifndef DRAG_PARSER_H
-#define DRAG_PARSER_H
+#ifndef DRAG_SYNTAX_PRINTER_H
+#define DRAG_SYNTAX_PRINTER_H
 
 #include <type_traits>
 #include <vector>
@@ -14,7 +14,7 @@
 #include "../expr/unary.h"
 
 namespace drag {
-    class parser : public drag::visitor {
+    class syntax_printer : public drag::visitor {
     private:
         std::string parenthesize(const std::string& name, drag::expr* expr);
         std::string parenthesize(const std::string& name, std::vector<struct drag::expr*> expr_list);
@@ -35,4 +35,4 @@ namespace drag {
     };
 }
 
-#endif //DRAG_PARSER_H
+#endif //DRAG_SYNTAX_PRINTER_H

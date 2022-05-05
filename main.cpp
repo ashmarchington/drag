@@ -1,10 +1,5 @@
 #include <iostream>
 #include "src/drag/main.h"
-#include "src/drag/syntax/expr/binary.h"
-#include "src/drag/syntax/expr/unary.h"
-#include "src/drag/syntax/expr/literal.h"
-#include "src/drag/syntax/expr/grouping.h"
-#include "src/drag/syntax/ast/parser.h"
 
 int main(int argc, char* argv[], [[maybe_unused]] char *envp[]) {
     drag::main drag = drag::main();

@@ -5,8 +5,7 @@
 #ifndef DRAG_LITERAL_H
 #define DRAG_LITERAL_H
 
-#include <utility>
-#include <sstream>
+#include <string>
 #include "../expr.h"
 #include "visitors/visitor.h"
 
@@ -43,6 +42,20 @@ namespace drag {
     struct TypeName<char *> {
         static std::string get(std::string data) {
             return {std::move(data)};
+        }
+    };
+
+    template<>
+    struct TypeName<bool> {
+        static std::string get(bool data) {
+            return data ? "true" : "false";
+        }
+    };
+
+    template<>
+    struct TypeName<nullptr_t> {
+        static std::string get(nullptr_t data) {
+            return "nil";
         }
     };
 

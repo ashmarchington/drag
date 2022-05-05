@@ -51,8 +51,8 @@ add_executable(
         src/drag/syntax/expr/unary.h
         src/drag/syntax/expr/visitors/visitor.cpp
         src/drag/syntax/expr/visitors/visitor.h
-        src/drag/syntax/ast/parser.cpp
-        src/drag/syntax/ast/parser.h)
+        src/drag/syntax/ast/syntax_printer.cpp
+        src/drag/syntax/ast/syntax_printer.h src/drag/parser/parser.cpp src/drag/parser/parser.h)
 
 add_executable(
         unit_test
@@ -96,5 +96,5 @@ add_executable(
         src/drag/syntax/expr/unary.h
         src/drag/syntax/expr/visitors/visitor.cpp
         src/drag/syntax/expr/visitors/visitor.h
-        src/drag/syntax/ast/parser.cpp
-        src/drag/syntax/ast/parser.h)
+        src/drag/syntax/ast/syntax_printer.cpp
+        src/drag/syntax/ast/syntax_printer.h)
